@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 54.0, 86.0, 640.0, 480.0 ],
+		"rect" : [ 54.0, 86.0, 643.0, 390.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -43,7 +43,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 450.0, 90.0, 150.0, 275.0 ],
+					"patching_rect" : [ 405.0, 59.0, 150.0, 275.0 ],
 					"style" : "",
 					"text" : "float32\nfloat64\n\nint8\nint16\nint32\nint64\n\nchar\n\nbool \n\nuint8\nuint16\nuint32\nuint64\n\nstring\n\nblob"
 				}
@@ -56,7 +56,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 105.0, 91.0, 24.0, 24.0 ],
+					"patching_rect" : [ 60.0, 60.0, 24.0, 24.0 ],
 					"style" : ""
 				}
 
@@ -66,13 +66,11 @@
 					"fontface" : 0,
 					"fontsize" : 12.0,
 					"id" : "obj-13",
-					"linecount" : 3,
 					"maxclass" : "o.display",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 105.0, 226.0, 164.0, 61.0 ],
-					"text" : "/my/float/1 : 2.345,\n/my/int : 2,\n/my/float/2 : 2.",
+					"patching_rect" : [ 60.0, 195.0, 164.0, 34.0 ],
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -87,7 +85,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
-					"patching_rect" : [ 105.0, 136.0, 308.0, 59.0 ],
+					"patching_rect" : [ 60.0, 105.0, 308.0, 59.0 ],
 					"text" : "/my/float/1 = 2.345, \n/my/int = int32(/my/float/1), \n/my/float/2 = float32(/my/int)",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}

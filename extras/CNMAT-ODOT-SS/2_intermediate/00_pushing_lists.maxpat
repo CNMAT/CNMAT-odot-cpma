@@ -5,11 +5,11 @@
 			"major" : 7,
 			"minor" : 3,
 			"revision" : 4,
-			"architecture" : "x86",
+			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 613.0, 164.0, 911.0, 529.0 ],
+		"rect" : [ 131.0, 127.0, 648.0, 292.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -41,14 +41,11 @@
 					"fontface" : 0,
 					"fontsize" : 12.0,
 					"id" : "obj-6",
-					"linecount" : 3,
 					"maxclass" : "o.display",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 465.0, 225.0, 293.0, 61.0 ],
-					"presentation_rect" : [ 463.0, 227.0, 0.0, 0.0 ],
-					"text" : "/list/1 : [1, 2, 3],\n/list/2 : [\"a\", \"b\", \"c\"],\n/myotherlist : [1, 2, 3, \"a\", \"b\", \"c\"]",
+					"patching_rect" : [ 315.0, 180.0, 293.0, 34.0 ],
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -63,8 +60,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 465.0, 90.0, 203.0, 38.0 ],
-					"presentation_rect" : [ 463.0, 92.0, 0.0, 0.0 ],
+					"patching_rect" : [ 315.0, 45.0, 203.0, 38.0 ],
 					"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 28, 47, 108, 105, 115, 116, 47, 49, 0, 44, 105, 105, 105, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 2, 0, 0, 0, 3, 0, 0, 0, 28, 47, 108, 105, 115, 116, 47, 50, 0, 44, 115, 115, 115, 0, 0, 0, 0, 97, 0, 0, 0, 98, 0, 0, 0, 99, 0, 0, 0 ],
 					"saved_bundle_length" : 80,
 					"text" : "/list/1 : [1, 2, 3],\n/list/2 : [\"a\", \"b\", \"c\"]",
@@ -81,8 +77,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
-					"patching_rect" : [ 465.0, 150.0, 279.0, 32.0 ],
-					"presentation_rect" : [ 463.0, 152.0, 0.0, 0.0 ],
+					"patching_rect" : [ 315.0, 105.0, 279.0, 32.0 ],
 					"text" : "/myotherlist = list(/list/1, /list/2)",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
@@ -93,13 +88,11 @@
 					"fontface" : 0,
 					"fontsize" : 12.0,
 					"id" : "obj-5",
-					"linecount" : 2,
 					"maxclass" : "o.display",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 195.0, 225.0, 243.0, 48.0 ],
-					"text" : "/mylist : [1, 2, 3, 4],\n/myotherlist : [1, 2, 3, 4, 300]",
+					"patching_rect" : [ 45.0, 180.0, 243.0, 34.0 ],
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -113,7 +106,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 195.0, 90.0, 181.0, 24.0 ],
+					"patching_rect" : [ 45.0, 45.0, 181.0, 24.0 ],
 					"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 32, 47, 109, 121, 108, 105, 115, 116, 0, 44, 105, 105, 105, 105, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 2, 0, 0, 0, 3, 0, 0, 0, 4 ],
 					"saved_bundle_length" : 52,
 					"text" : "/mylist : [1, 2, 3, 4]",
@@ -130,7 +123,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
-					"patching_rect" : [ 195.0, 150.0, 250.0, 32.0 ],
+					"patching_rect" : [ 45.0, 105.0, 250.0, 32.0 ],
 					"text" : "/myotherlist = list(/mylist, 300)",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}

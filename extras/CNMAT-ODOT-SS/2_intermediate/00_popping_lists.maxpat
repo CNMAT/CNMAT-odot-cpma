@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 147.0, 114.0, 593.0, 428.0 ],
+		"rect" : [ 147.0, 114.0, 624.0, 275.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -41,13 +41,11 @@
 					"fontface" : 0,
 					"fontsize" : 12.0,
 					"id" : "obj-9",
-					"linecount" : 2,
 					"maxclass" : "o.display",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 285.0, 255.0, 243.0, 48.0 ],
-					"text" : "/mylist : [1, 2, 3, 4],\n/myotherlist : [1, 2, 3]",
+					"patching_rect" : [ 300.0, 165.0, 243.0, 34.0 ],
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -61,7 +59,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 285.0, 120.0, 181.0, 24.0 ],
+					"patching_rect" : [ 300.0, 30.0, 181.0, 24.0 ],
 					"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 32, 47, 109, 121, 108, 105, 115, 116, 0, 44, 105, 105, 105, 105, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 2, 0, 0, 0, 3, 0, 0, 0, 4 ],
 					"saved_bundle_length" : 52,
 					"text" : "/mylist : [1, 2, 3, 4]",
@@ -78,7 +76,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
-					"patching_rect" : [ 285.0, 180.0, 250.0, 32.0 ],
+					"patching_rect" : [ 300.0, 90.0, 250.0, 32.0 ],
 					"text" : "/myotherlist = butlast(/mylist)",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
@@ -89,13 +87,11 @@
 					"fontface" : 0,
 					"fontsize" : 12.0,
 					"id" : "obj-5",
-					"linecount" : 2,
 					"maxclass" : "o.display",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 30.0, 255.0, 243.0, 48.0 ],
-					"text" : "/mylist : [1, 2, 3, 4],\n/myotherlist : [2, 3, 4]",
+					"patching_rect" : [ 45.0, 165.0, 243.0, 34.0 ],
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -109,7 +105,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 30.0, 120.0, 181.0, 24.0 ],
+					"patching_rect" : [ 45.0, 30.0, 181.0, 24.0 ],
 					"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 32, 47, 109, 121, 108, 105, 115, 116, 0, 44, 105, 105, 105, 105, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 2, 0, 0, 0, 3, 0, 0, 0, 4 ],
 					"saved_bundle_length" : 52,
 					"text" : "/mylist : [1, 2, 3, 4]",
@@ -126,7 +122,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
-					"patching_rect" : [ 30.0, 180.0, 250.0, 32.0 ],
+					"patching_rect" : [ 45.0, 90.0, 250.0, 32.0 ],
 					"text" : "/myotherlist = rest(/mylist)",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
