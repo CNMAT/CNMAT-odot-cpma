@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 54.0, 86.0, 643.0, 390.0 ],
+		"rect" : [ 34.0, 79.0, 476.0, 440.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -66,11 +66,13 @@
 					"fontface" : 0,
 					"fontsize" : 12.0,
 					"id" : "obj-13",
+					"linecount" : 3,
 					"maxclass" : "o.display",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 60.0, 195.0, 164.0, 34.0 ],
+					"patching_rect" : [ 60.0, 195.0, 164.0, 61.0 ],
+					"text" : "/my/float/1 : 2.345,\n/my/int : 2,\n/my/float/2 : 2.",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
