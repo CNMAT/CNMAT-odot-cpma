@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 52.0, 107.0, 965.0, 573.0 ],
+		"rect" : [ 117.0, 134.0, 965.0, 573.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -115,7 +115,6 @@
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
 									"patching_rect" : [ 424.0, 249.0, 50.0, 22.0 ],
-									"presentation_rect" : [ 422.0, 311.0, 0.0, 0.0 ],
 									"style" : ""
 								}
 
@@ -129,7 +128,6 @@
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
 									"patching_rect" : [ 533.0, 166.0, 50.0, 22.0 ],
-									"presentation_rect" : [ 535.0, 228.0, 0.0, 0.0 ],
 									"style" : ""
 								}
 
@@ -143,7 +141,6 @@
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
 									"patching_rect" : [ 424.0, 166.0, 50.0, 22.0 ],
-									"presentation_rect" : [ 426.0, 228.0, 0.0, 0.0 ],
 									"style" : ""
 								}
 
@@ -157,7 +154,6 @@
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
 									"patching_rect" : [ 315.0, 162.0, 50.0, 22.0 ],
-									"presentation_rect" : [ 291.0, 211.0, 0.0, 0.0 ],
 									"style" : ""
 								}
 
@@ -871,7 +867,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 645.0, 191.5, 193.0, 75.0 ],
-					"text" : "/random : 0.590759,\n/myval : 0.5,\n/param/1 : [1, 2, 3, 4],\n/param/2 : [\"dog\", \"cat\"]",
+					"text" : "/random : 0.116012,\n/myval : 0.5,\n/param/1 : [1, 2, 3, 4],\n/param/2 : [\"dog\", \"cat\"]",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 

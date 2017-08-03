@@ -127,13 +127,11 @@
 					"fontface" : 0,
 					"fontsize" : 12.0,
 					"id" : "obj-36",
-					"linecount" : 2,
 					"maxclass" : "o.display",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 735.0, 585.0, 293.0, 48.0 ],
-					"text" : "/f : [22, 92.4, 68, 21],\n/c : [-5.55556, 33.5556, 20., -6.11111]",
+					"patching_rect" : [ 735.0, 585.0, 293.0, 34.0 ],
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -153,14 +151,14 @@
 , 			{
 				"box" : 				{
 					"fontface" : 0,
-					"fontsize" : 12.0,
+					"fontsize" : 11.0,
 					"id" : "obj-38",
 					"linecount" : 5,
 					"maxclass" : "o.expr.codebox",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
-					"patching_rect" : [ 735.0, 480.0, 273.0, 86.0 ],
+					"patching_rect" : [ 735.0, 480.0, 184.0, 81.0 ],
 					"text" : "/c = map(\n  lambda([in], \n    (5.0 / 9) * (in - 32)\n  ), /f\n)",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
@@ -253,14 +251,14 @@
 , 			{
 				"box" : 				{
 					"fontface" : 0,
-					"fontsize" : 12.0,
+					"fontsize" : 11.0,
 					"id" : "obj-24",
 					"linecount" : 7,
 					"maxclass" : "o.expr.codebox",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
-					"patching_rect" : [ 345.0, 443.0, 273.0, 114.0 ],
+					"patching_rect" : [ 345.0, 450.0, 244.0, 106.0 ],
 					"text" : "/c = nfill(length(/f), 0),\nmap(\n  lambda([f, i], \n    /c[[i]] = (5.0 / 9) * (f - 32)\n  ), \n  /f, aseq(0, length(/f) - 1)\n)",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
@@ -310,14 +308,14 @@
 , 			{
 				"box" : 				{
 					"fontface" : 0,
-					"fontsize" : 12.0,
+					"fontsize" : 11.0,
 					"id" : "obj-29",
 					"linecount" : 6,
 					"maxclass" : "o.expr.codebox",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
-					"patching_rect" : [ 45.0, 450.0, 229.0, 100.0 ],
+					"patching_rect" : [ 45.0, 457.0, 211.0, 93.0 ],
 					"text" : "apply(\n  lambda([f], \n    /c = (5.0 / 9) * (f - 32)\n  ), \n  /f\n)",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
@@ -345,13 +343,11 @@
 					"fontface" : 0,
 					"fontsize" : 12.0,
 					"id" : "obj-16",
-					"linecount" : 2,
 					"maxclass" : "o.display",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 495.0, 255.0, 330.0, 48.0 ],
-					"text" : "/c : [41, 32.4, 68, 99],\n/f : [105.8, 90.32, 154.4, 210.2]",
+					"patching_rect" : [ 495.0, 255.0, 330.0, 34.0 ],
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -371,14 +367,14 @@
 , 			{
 				"box" : 				{
 					"fontface" : 0,
-					"fontsize" : 12.0,
+					"fontsize" : 11.0,
 					"id" : "obj-18",
 					"linecount" : 7,
 					"maxclass" : "o.expr.codebox",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
-					"patching_rect" : [ 495.0, 120.0, 265.0, 114.0 ],
+					"patching_rect" : [ 495.0, 127.0, 244.0, 106.0 ],
 					"text" : "/f = nfill(length(/c), 0),\nmap(\n  lambda([c, i], \n    /f[[i]] = ((9.0 / 5) * c + 32)\n  ), \n  /c, aseq(0, length(/c) - 1)\n)",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
@@ -416,13 +412,11 @@
 					"fontface" : 0,
 					"fontsize" : 12.0,
 					"id" : "obj-5",
-					"linecount" : 2,
 					"maxclass" : "o.display",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 90.0, 255.0, 150.0, 48.0 ],
-					"text" : "/c : 1.09,\n/f : 33.962",
+					"patching_rect" : [ 90.0, 255.0, 150.0, 34.0 ],
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -430,14 +424,14 @@
 , 			{
 				"box" : 				{
 					"fontface" : 0,
-					"fontsize" : 12.0,
+					"fontsize" : 11.0,
 					"id" : "obj-2",
 					"linecount" : 6,
 					"maxclass" : "o.expr.codebox",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
-					"patching_rect" : [ 90.0, 120.0, 230.0, 100.0 ],
+					"patching_rect" : [ 90.0, 127.0, 211.0, 93.0 ],
 					"text" : "apply(\n  lambda([bob], \n    /f = (9.0 / 5) * bob + 32\n  ), \n  /c\n)",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}

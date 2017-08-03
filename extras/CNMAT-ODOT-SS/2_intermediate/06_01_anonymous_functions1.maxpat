@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 163.0, 93.0, 751.0, 607.0 ],
+		"rect" : [ 163.0, 93.0, 707.0, 607.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,15 +39,14 @@
 		"boxes" : [ 			{
 				"box" : 				{
 					"fontface" : 0,
-					"fontsize" : 12.0,
+					"fontsize" : 11.0,
 					"id" : "obj-9",
 					"linecount" : 11,
 					"maxclass" : "o.expr.codebox",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
-					"patching_rect" : [ 30.0, 180.0, 574.0, 168.0 ],
-					"presentation_rect" : [ 52.0, 265.0, 0.0, 0.0 ],
+					"patching_rect" : [ 30.0, 180.0, 528.0, 156.0 ],
 					"text" : "/engine/assign/amp = \"assign(\n  \\\"/source/\\\" + string(/sampler/id) + \\\"/beam/amp\\\", 1.\n)\",\n/engine/assign/dir/vert = \"assign(\n  \\\"/source/\\\" + string(/sampler/id) + \n  \\\"/beam/dir/vert\\\", scale(/sampler/sync, 0., 1., /vert/start, /vert/end)\n)\",\n/engine/assign/dir/horiz = \"assign(\n  \\\"/source/\\\" + string(/sampler/id) + \n  \\\"/beam/dir/horiz\\\", scale(/sampler/sync, 0., 1., /horiz/start, /horiz/end)\n)\"",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
@@ -69,14 +68,14 @@
 , 			{
 				"box" : 				{
 					"fontface" : 0,
-					"fontsize" : 12.0,
+					"fontsize" : 11.0,
 					"id" : "obj-4",
 					"linecount" : 9,
 					"maxclass" : "o.compose",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 30.0, 30.0, 685.0, 133.0 ],
+					"patching_rect" : [ 30.0, 30.0, 630.0, 123.0 ],
 					"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 20, 47, 102, 105, 108, 101, 110, 97, 109, 101, 0, 0, 0, 44, 115, 0, 0, 102, 111, 111, 0, 0, 0, 0, 20, 47, 115, 97, 109, 112, 108, 101, 114, 47, 105, 100, 0, 44, 105, 0, 0, 0, 0, 0, 1, 0, 0, 0, 28, 47, 115, 97, 109, 112, 108, 101, 114, 47, 115, 121, 110, 99, 0, 0, 0, 44, 100, 0, 0, 63, -32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 28, 47, 115, 101, 108, 101, 99, 116, 47, 102, 105, 108, 101, 110, 97, 109, 101, 0, 0, 0, 0, 44, 115, 0, 0, 102, 111, 111, 0, 0, 0, 0, 24, 47, 104, 111, 114, 105, 122, 47, 115, 116, 97, 114, 116, 0, 0, 0, 0, 44, 105, 0, 0, 0, 0, 0, 90, 0, 0, 0, 20, 47, 104, 111, 114, 105, 122, 47, 101, 110, 100, 0, 0, 44, 105, 0, 0, 0, 0, 1, -62, 0, 0, 0, 24, 47, 118, 101, 114, 116, 47, 115, 116, 97, 114, 116, 0, 44, 100, 0, 0, 64, 86, -128, 0, 0, 0, 0, 0, 0, 0, 0, 24, 47, 118, 101, 114, 116, 47, 101, 110, 100, 0, 0, 0, 44, 100, 0, 0, 64, 86, -128, 0, 0, 0, 0, 0, 0, 0, 0, 96, 47, 101, 110, 103, 105, 110, 101, 47, 101, 118, 97, 108, 0, 0, 0, 0, 44, 115, 115, 115, 0, 0, 0, 0, 47, 101, 110, 103, 105, 110, 101, 47, 97, 115, 115, 105, 103, 110, 47, 97, 109, 112, 0, 0, 47, 101, 110, 103, 105, 110, 101, 47, 97, 115, 115, 105, 103, 110, 47, 100, 105, 114, 47, 118, 101, 114, 116, 0, 47, 101, 110, 103, 105, 110, 101, 47, 97, 115, 115, 105, 103, 110, 47, 100, 105, 114, 47, 104, 111, 114, 105, 122, 0, 0, 0, 0 ],
 					"saved_bundle_length" : 336,
 					"text" : "/filename : \"foo\",\n/sampler/id : 1,\n/sampler/sync : 0.5,\n/select/filename : \"foo\",\n/horiz/start : 90,\n/horiz/end : 450,\n/vert/start : 90.,\n/vert/end : 90.,\n/engine/eval : [\"/engine/assign/amp\", \"/engine/assign/dir/vert\", \"/engine/assign/dir/horiz\"]",
@@ -89,13 +88,11 @@
 					"fontface" : 0,
 					"fontsize" : 12.0,
 					"id" : "obj-2",
-					"linecount" : 3,
 					"maxclass" : "o.display",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 30.0, 495.0, 315.0, 61.0 ],
-					"text" : "/source/1/beam/amp : 1.,\n/source/1/beam/dir/vert : 90.,\n/source/1/beam/dir/horiz : 270.",
+					"patching_rect" : [ 30.0, 495.0, 315.0, 34.0 ],
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -103,13 +100,13 @@
 , 			{
 				"box" : 				{
 					"fontface" : 0,
-					"fontsize" : 12.0,
+					"fontsize" : 11.0,
 					"id" : "obj-11",
 					"maxclass" : "o.expr.codebox",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
-					"patching_rect" : [ 30.0, 360.0, 344.0, 32.0 ],
+					"patching_rect" : [ 30.0, 360.0, 316.0, 31.0 ],
 					"text" : "map(lambda([a], eval(value(a))), /engine/eval)",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}

@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 34.0, 79.0, 476.0, 440.0 ],
+		"rect" : [ 78.0, 109.0, 476.0, 440.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,12 +38,13 @@
 		"subpatcher_template" : "gridded",
 		"boxes" : [ 			{
 				"box" : 				{
+					"fontsize" : 14.0,
 					"id" : "obj-4",
 					"linecount" : 20,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 405.0, 59.0, 150.0, 275.0 ],
+					"patching_rect" : [ 375.0, 60.0, 56.0, 319.0 ],
 					"style" : "",
 					"text" : "float32\nfloat64\n\nint8\nint16\nint32\nint64\n\nchar\n\nbool \n\nuint8\nuint16\nuint32\nuint64\n\nstring\n\nblob"
 				}
@@ -87,7 +88,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
-					"patching_rect" : [ 60.0, 105.0, 308.0, 59.0 ],
+					"patching_rect" : [ 60.0, 105.0, 236.0, 59.0 ],
 					"text" : "/my/float/1 = 2.345, \n/my/int = int32(/my/float/1), \n/my/float/2 = float32(/my/int)",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}

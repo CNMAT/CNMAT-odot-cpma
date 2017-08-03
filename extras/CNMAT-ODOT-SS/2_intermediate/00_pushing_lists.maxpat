@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 34.0, 79.0, 676.0, 544.0 ],
+		"rect" : [ 109.0, 122.0, 676.0, 544.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -43,7 +43,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 510.0, 330.0, 150.0, 60.0 ],
+					"patching_rect" : [ 525.0, 285.0, 133.0, 60.0 ],
 					"style" : "",
 					"text" : "note the difference between accessing an element in a list and appending"
 				}
@@ -60,7 +60,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 330.0, 420.0, 243.0, 48.0 ],
-					"text" : "/mylist : [1, 2, 3, 4],\n/myval : 2",
+					"text" : "/mylist : [1, 2, 3, 4],\n/2nd/elem : 2",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -91,8 +91,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
-					"patching_rect" : [ 330.0, 345.0, 164.0, 32.0 ],
-					"text" : "/myval = /mylist[[1]]",
+					"patching_rect" : [ 330.0, 345.0, 185.0, 32.0 ],
+					"text" : "/2nd/elem = /mylist[[1]]",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
@@ -102,13 +102,11 @@
 					"fontface" : 0,
 					"fontsize" : 12.0,
 					"id" : "obj-2",
-					"linecount" : 2,
 					"maxclass" : "o.display",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 45.0, 420.0, 243.0, 48.0 ],
-					"text" : "/mylist : [1, 2, 3, 4],\n/myotherlist : [1, 2, 3, 4, 300]",
+					"patching_rect" : [ 45.0, 420.0, 243.0, 34.0 ],
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -150,13 +148,11 @@
 					"fontface" : 0,
 					"fontsize" : 12.0,
 					"id" : "obj-6",
-					"linecount" : 3,
 					"maxclass" : "o.display",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 330.0, 180.0, 293.0, 61.0 ],
-					"text" : "/list/1 : [1, 2, 3],\n/list/2 : [\"a\", \"b\", \"c\"],\n/myotherlist : [1, 2, 3, \"a\", \"b\", \"c\"]",
+					"patching_rect" : [ 330.0, 180.0, 293.0, 34.0 ],
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -199,13 +195,11 @@
 					"fontface" : 0,
 					"fontsize" : 12.0,
 					"id" : "obj-5",
-					"linecount" : 2,
 					"maxclass" : "o.display",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 45.0, 180.0, 243.0, 48.0 ],
-					"text" : "/mylist : [1, 2, 3, 4],\n/myotherlist : [1, 2, 3, 4, 300]",
+					"patching_rect" : [ 45.0, 180.0, 243.0, 34.0 ],
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
