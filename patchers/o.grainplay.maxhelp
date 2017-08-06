@@ -5,11 +5,11 @@
 			"major" : 7,
 			"minor" : 3,
 			"revision" : 4,
-			"architecture" : "x64",
+			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 455.0, 122.0, 1003.0, 698.0 ],
+		"rect" : [ 745.0, 172.0, 1003.0, 698.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -65,18 +65,17 @@
 , 			{
 				"box" : 				{
 					"fontface" : 0,
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
+					"fontsize" : 10.0,
 					"id" : "obj-7",
-					"linecount" : 3,
+					"linecount" : 6,
 					"maxclass" : "o.compose",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 390.0, 285.0, 180.0, 51.0 ],
-					"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 16, 47, 98, 117, 102, 102, 101, 114, 0, 44, 115, 0, 0, 119, 98, 0, 0, 0, 0, 0, 16, 47, 100, 117, 114, 47, 109, 115, 0, 44, 105, 0, 0, 0, 0, 0, 100, 0, 0, 0, 28, 47, 115, 116, 97, 114, 116, 47, 112, 104, 97, 115, 101, 0, 0, 0, 0, 44, 100, 0, 0, 63, -26, -16, 35, -15, -111, 64, 0 ],
-					"saved_bundle_length" : 88,
-					"text" : "/buffer : \"wb\",\n/dur/ms : 100,\n/start/phase : 0.716814",
+					"patching_rect" : [ 390.0, 360.0, 195.0, 78.0 ],
+					"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 28, 47, 115, 116, 97, 114, 116, 47, 112, 104, 97, 115, 101, 0, 0, 0, 0, 44, 100, 0, 0, 63, -31, -54, 99, 96, 0, 0, 0, 0, 0, 0, 16, 47, 98, 117, 102, 102, 101, 114, 0, 44, 115, 0, 0, 119, 98, 0, 0, 0, 0, 0, 16, 47, 100, 117, 114, 47, 109, 115, 0, 44, 105, 0, 0, 0, 0, 0, -56, 0, 0, 0, 24, 47, 98, 97, 108, 97, 110, 99, 101, 0, 0, 0, 0, 44, 100, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 16, 47, 99, 117, 116, 111, 102, 102, 0, 44, 105, 0, 0, 0, 0, 3, 32, 0, 0, 0, 20, 47, 103, 97, 105, 110, 0, 0, 0, 44, 100, 0, 0, 63, -16, 0, 0, 0, 0, 0, 0 ],
+					"saved_bundle_length" : 160,
+					"text" : "/start/phase : 0.555956,\n/buffer : \"wb\",\n/dur/ms : 200,\n/balance : 0.,\n/cutoff : 800,\n/gain : 1.",
 					"textcolor" : [ 0.188, 0.188, 0.188, 1.0 ]
 				}
 
@@ -140,22 +139,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 150.0, 300.0, 81.0, 22.0 ],
+					"patching_rect" : [ 150.0, 345.0, 81.0, 22.0 ],
 					"style" : "",
 					"text" : "prepend note"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-33",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 312.0, 300.0, 47.0, 22.0 ],
-					"style" : "",
-					"text" : "open 1"
 				}
 
 			}
@@ -166,9 +152,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "signal" ],
-					"patching_rect" : [ 150.0, 345.0, 209.0, 22.0 ],
+					"patching_rect" : [ 150.0, 381.0, 219.0, 22.0 ],
 					"style" : "",
-					"text" : "poly~ grainplay @voices 30 @steal 1"
+					"text" : "poly~ o.grainplay @voices 30 @steal 1"
 				}
 
 			}
@@ -180,27 +166,8 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 252.0, 90.0, 50.0, 22.0 ],
+					"patching_rect" : [ 253.0, 90.0, 50.0, 22.0 ],
 					"style" : ""
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontface" : 0,
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-4",
-					"linecount" : 2,
-					"maxclass" : "o.compose",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 150.0, 165.0, 140.0, 37.0 ],
-					"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 16, 47, 98, 117, 102, 102, 101, 114, 0, 44, 115, 0, 0, 119, 98, 0, 0, 0, 0, 0, 16, 47, 100, 117, 114, 47, 109, 115, 0, 44, 105, 0, 0, 0, 0, 0, 100 ],
-					"saved_bundle_length" : 56,
-					"text" : "/buffer : \"wb\",\n/dur/ms : 100",
-					"textcolor" : [ 0.188, 0.188, 0.188, 1.0 ]
 				}
 
 			}
@@ -209,13 +176,13 @@
 					"fontface" : 0,
 					"fontsize" : 10.0,
 					"id" : "obj-25",
-					"linecount" : 2,
+					"linecount" : 7,
 					"maxclass" : "o.expr.codebox",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
-					"patching_rect" : [ 150.0, 240.0, 163.0, 41.0 ],
-					"text" : "/start/phase = /random, \ndelete(/random)",
+					"patching_rect" : [ 150.0, 240.0, 163.0, 98.0 ],
+					"text" : "/start/phase = /random,\n/buffer = \"wb\", \n/dur/ms = 200,\n/balance = 0.,\n/cutoff = 800,\n/gain = 1.,\ndelete(/random)",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
@@ -225,11 +192,11 @@
 					"id" : "obj-20",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "FullPacket", "" ],
-					"patching_rect" : [ 150.0, 210.0, 61.0, 22.0 ],
+					"numoutlets" : 1,
+					"outlettype" : [ "FullPacket" ],
+					"patching_rect" : [ 150.0, 195.0, 112.0, 22.0 ],
 					"style" : "",
-					"text" : "o.random"
+					"text" : "o.genrand /random"
 				}
 
 			}
@@ -278,9 +245,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 150.0, 120.0, 121.0, 22.0 ],
+					"patching_rect" : [ 150.0, 120.0, 122.0, 22.0 ],
 					"style" : "",
-					"text" : "metro 500 @active 1"
+					"text" : "metro 100 @active 1"
 				}
 
 			}
@@ -316,7 +283,7 @@
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 150.0, 540.0, 45.0, 45.0 ],
+					"patching_rect" : [ 150.0, 558.5, 45.0, 45.0 ],
 					"style" : ""
 				}
 
@@ -360,7 +327,7 @@
 							"major" : 7,
 							"minor" : 3,
 							"revision" : 4,
-							"architecture" : "x64",
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
@@ -432,10 +399,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 409.75, 749.0, 37.0, 22.0 ],
-									"saved_object_attributes" : 									{
-										"attr_comment" : ""
-									}
-,
 									"style" : "",
 									"text" : "out 1"
 								}
@@ -680,10 +643,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 196.5, 203.0, 30.0, 22.0 ],
-									"saved_object_attributes" : 									{
-										"attr_comment" : ""
-									}
-,
 									"style" : "",
 									"text" : "in 1"
 								}
@@ -698,10 +657,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 315.25, 749.0, 43.0, 22.0 ],
-									"saved_object_attributes" : 									{
-										"attr_comment" : ""
-									}
-,
 									"style" : "",
 									"text" : "out~ 1"
 								}
@@ -1044,13 +999,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-31", 0 ],
-					"source" : [ "obj-33", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-31", 0 ],
 					"source" : [ "obj-34", 0 ]
 				}
 
@@ -1067,13 +1015,6 @@
 					"destination" : [ "obj-62", 4 ],
 					"midpoints" : [ 876.5, 450.0, 891.0, 450.0, 891.0, 310.0, 876.5, 310.0 ],
 					"source" : [ "obj-37", 5 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-20", 0 ],
-					"source" : [ "obj-4", 0 ]
 				}
 
 			}
@@ -1123,7 +1064,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-4", 0 ],
+					"destination" : [ "obj-20", 0 ],
 					"order" : 0,
 					"source" : [ "obj-63", 0 ]
 				}
@@ -1150,29 +1091,15 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "o.random.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/Music-and-Computing/patchers/random",
-				"patcherrelativepath" : "../../../Max 7/Packages/Music-and-Computing/patchers/random",
+				"name" : "o.genrand.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-ODOT-SS/patchers",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "m158.loadbang.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/Music-and-Computing/patchers/internal",
-				"patcherrelativepath" : "../../../Max 7/Packages/Music-and-Computing/patchers/internal",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "o.doc.handler.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/Music-and-Computing/patchers/internal",
-				"patcherrelativepath" : "../../../Max 7/Packages/Music-and-Computing/patchers/internal",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "grainplay.maxpat",
-				"bootpath" : "~/Documents/CNMAT/summer_course/3_examples",
+				"name" : "o.grainplay.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-ODOT-SS/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
@@ -1194,23 +1121,7 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "o.select.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.timetag.mxo",
-				"type" : "iLaX"
-			}
-, 			{
 				"name" : "o.pack.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.cond.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.prepend.mxo",
 				"type" : "iLaX"
 			}
  ],
