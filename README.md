@@ -3,7 +3,8 @@ CNMAT's ODOT Immersion course
 
 ## This package relies on two other packages that CNMAT distributes:
 
-- [CNMAT-ODOT v1.2](https://github.com/CNMAT/CNMAT-odot/releases/download/v1.2/odot-Max-MacOSX-v1.1-0-g9f569ee-master.tgz)
+- [CNMAT-ODOT v1.2 (osx)](https://github.com/CNMAT/CNMAT-odot/releases/download/v1.2/odot-Max-MacOSX-v1.2-0-g98a4d14-master.tgz)
+- [CNMAT-ODOT v1.2 (win 32-bit)](https://github.com/CNMAT/CNMAT-odot/releases/download/v1.2/odot-Max-Win32-v1.2-3-g98a4d14-master.zip)
 - [Music and Computing v1.6](https://github.com/CNMAT/Music-and-Computing/archive/1.6.zip)
 
 Once these packages are installed, the materials in this set of files can be used.
