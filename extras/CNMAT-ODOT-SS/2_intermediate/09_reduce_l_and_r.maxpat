@@ -5,7 +5,7 @@
 			"major" : 7,
 			"minor" : 3,
 			"revision" : 4,
-			"architecture" : "x64",
+			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
@@ -38,13 +38,25 @@
 		"subpatcher_template" : "gridded",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-11",
+					"linecount" : 7,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 450.0, 285.0, 144.0, 100.0 ],
+					"style" : "",
+					"text" : "sub()\nadd()\ndiv()\nmul()\n\n...any function that takes two ops"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-10",
 					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 241.0, 405.0, 72.0, 33.0 ],
-					"presentation_rect" : [ 127.0, 423.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "20 / 2 = 10\n10 / 2 = 5",
 					"textjustification" : 1
@@ -56,14 +68,11 @@
 					"fontface" : 0,
 					"fontsize" : 12.0,
 					"id" : "obj-15",
-					"linecount" : 2,
 					"maxclass" : "o.display",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 195.0, 345.0, 164.0, 48.0 ],
-					"presentation_rect" : [ 78.0, 363.0, 0.0, 0.0 ],
-					"text" : "/vec : [20, 2, 2, 2],\n/result : 2",
+					"patching_rect" : [ 195.0, 345.0, 164.0, 34.0 ],
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -78,7 +87,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 195.0, 270.0, 167.0, 24.0 ],
-					"presentation_rect" : [ 78.0, 288.0, 0.0, 0.0 ],
 					"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 32, 47, 118, 101, 99, 0, 0, 0, 0, 44, 105, 105, 105, 105, 0, 0, 0, 0, 0, 0, 20, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0, 2 ],
 					"saved_bundle_length" : 52,
 					"text" : "/vec : [20, 2, 2, 2]",
@@ -96,7 +104,6 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
 					"patching_rect" : [ 195.0, 300.0, 214.0, 32.0 ],
-					"presentation_rect" : [ 78.0, 318.0, 0.0, 0.0 ],
 					"text" : "/result = lreduce(div, /vec)",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
@@ -110,7 +117,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 90.0, 180.0, 66.0, 47.0 ],
-					"presentation_rect" : [ 106.0, 214.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "1 - 2 = -1\n-1 - 3 = -4\n-4 - 4 = -8",
 					"textjustification" : 1
@@ -136,14 +142,11 @@
 					"fontface" : 0,
 					"fontsize" : 12.0,
 					"id" : "obj-4",
-					"linecount" : 2,
 					"maxclass" : "o.display",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 330.0, 120.0, 164.0, 48.0 ],
-					"presentation_rect" : [ 359.0, 155.0, 0.0, 0.0 ],
-					"text" : "/vec : [1, 2, 3, 4],\n/result : -2",
+					"patching_rect" : [ 330.0, 120.0, 164.0, 34.0 ],
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -175,7 +178,6 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
 					"patching_rect" : [ 330.0, 75.0, 214.0, 32.0 ],
-					"presentation_rect" : [ 359.0, 110.0, 0.0, 0.0 ],
 					"text" : "/result = rreduce(sub, /vec)",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
@@ -186,13 +188,11 @@
 					"fontface" : 0,
 					"fontsize" : 12.0,
 					"id" : "obj-3",
-					"linecount" : 2,
 					"maxclass" : "o.display",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 45.0, 120.0, 164.0, 48.0 ],
-					"text" : "/vec : [1, 2, 3, 4],\n/result : -8",
+					"patching_rect" : [ 45.0, 120.0, 164.0, 34.0 ],
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
