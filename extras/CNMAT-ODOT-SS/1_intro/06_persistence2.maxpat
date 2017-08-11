@@ -5,7 +5,7 @@
 			"major" : 7,
 			"minor" : 3,
 			"revision" : 4,
-			"architecture" : "x64",
+			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
@@ -38,12 +38,37 @@
 		"subpatcher_template" : "gridded",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-20",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 615.0, 450.0, 203.5, 33.0 ],
+					"style" : "",
+					"text" : "< when this button is illuminated, we are sending data into o.dict"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-10",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 270.0, 191.0, 150.0, 20.0 ],
+					"style" : "",
+					"text" : "naming bundles"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-30",
 					"maxclass" : "button",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 360.0, 477.0, 24.0, 24.0 ],
+					"patching_rect" : [ 585.0, 450.0, 24.0, 24.0 ],
 					"style" : ""
 				}
 
@@ -68,14 +93,14 @@
 					"numinlets" : 2,
 					"numoutlets" : 4,
 					"outlettype" : [ "dictionary", "", "", "" ],
-					"patching_rect" : [ 420.0, 522.0, 72.0, 22.0 ],
+					"patching_rect" : [ 420.0, 522.0, 93.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"embed" : 0,
 						"parameter_enable" : 0
 					}
 ,
 					"style" : "",
-					"text" : "dict presets"
+					"text" : "dict all_bundles"
 				}
 
 			}
@@ -110,11 +135,13 @@
 					"fontface" : 0,
 					"fontsize" : 12.0,
 					"id" : "obj-16",
+					"linecount" : 4,
 					"maxclass" : "o.display",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 615.0, 337.0, 150.0, 34.0 ],
+					"patching_rect" : [ 615.0, 337.0, 150.0, 75.0 ],
+					"text" : "/bundle/96 : {\n\t/foo : 123,\n\t/bar : 456\n}",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -218,7 +245,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
 					"patching_rect" : [ 615.0, 240.0, 243.0, 59.0 ],
-					"text" : "assign(\"/preset/\" + /n, /bndl),\ndelete(/bndl),\ndelete(/n)",
+					"text" : "assign(\"/bundle/\" + /n, /bndl),\ndelete(/bndl),\ndelete(/n)",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
@@ -326,11 +353,13 @@
 					"fontface" : 0,
 					"fontsize" : 12.0,
 					"id" : "obj-8",
+					"linecount" : 5,
 					"maxclass" : "o.display",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 60.0, 300.0, 225.0, 34.0 ],
+					"patching_rect" : [ 60.0, 300.0, 225.0, 88.0 ],
+					"text" : "/name/2 : {\n\t/blue : 123,\n\t/green : 456,\n\t/name : \"/name/2\"\n}",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -358,27 +387,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 360.0, 372.0, 50.0, 22.0 ],
+					"patching_rect" : [ 345.0, 360.0, 37.0, 22.0 ],
 					"style" : "",
 					"text" : "clear"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"angle" : 270.0,
-					"border" : 1,
-					"bordercolor" : [ 0.239216, 0.254902, 0.278431, 1.0 ],
-					"grad1" : [ 0.862745, 0.870588, 0.878431, 0.0 ],
-					"grad2" : [ 0.862745, 0.870588, 0.878431, 0.0 ],
-					"id" : "obj-31",
-					"maxclass" : "panel",
-					"mode" : 1,
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 347.5, 367.0, 195.0, 188.0 ],
-					"proportion" : 0.39,
-					"style" : ""
 				}
 
 			}
@@ -458,7 +469,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-24", 0 ],
-					"order" : 0,
+					"order" : 1,
 					"source" : [ "obj-23", 0 ]
 				}
 
@@ -466,7 +477,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-30", 0 ],
-					"order" : 1,
+					"order" : 0,
 					"source" : [ "obj-23", 0 ]
 				}
 
