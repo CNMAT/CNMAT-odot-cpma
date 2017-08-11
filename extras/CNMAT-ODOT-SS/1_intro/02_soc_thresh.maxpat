@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 40.0, 104.0, 819.0, 674.0 ],
+		"rect" : [ 40.0, 104.0, 870.0, 694.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -522,28 +522,28 @@
 		"dependency_cache" : [ 			{
 				"name" : "m158.o.io.mouse.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/Music-and-Computing/patchers/io",
-				"patcherrelativepath" : "../../../Max 7/Packages/Music-and-Computing/patchers/io",
+				"patcherrelativepath" : "../../../../Music-and-Computing/patchers/io",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "m158.loadbang.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/Music-and-Computing/patchers/internal",
-				"patcherrelativepath" : "../../../Max 7/Packages/Music-and-Computing/patchers/internal",
+				"patcherrelativepath" : "../../../../Music-and-Computing/patchers/internal",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.gather.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/odot/patchers/namespace",
-				"patcherrelativepath" : "../../../Max 7/Packages/odot/patchers/namespace",
+				"patcherrelativepath" : "../../../../odot/patchers/namespace",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.righttoleft.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/odot/patchers/ordering",
-				"patcherrelativepath" : "../../../Max 7/Packages/odot/patchers/ordering",
+				"patcherrelativepath" : "../../../../odot/patchers/ordering",
 				"type" : "JSON",
 				"implicit" : 1
 			}
