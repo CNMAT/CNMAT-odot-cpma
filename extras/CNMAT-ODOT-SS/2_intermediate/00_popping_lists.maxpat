@@ -229,11 +229,13 @@
 					"fontface" : 0,
 					"fontsize" : 12.0,
 					"id" : "obj-6",
+					"linecount" : 2,
 					"maxclass" : "o.display",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 627.0, 405.0, 243.0, 34.0 ],
+					"patching_rect" : [ 627.0, 405.0, 207.0, 48.0 ],
+					"text" : "/mylist : [1, 2, 3, 4],\n/pushed : [1, 2, 3, 4, 300]",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
