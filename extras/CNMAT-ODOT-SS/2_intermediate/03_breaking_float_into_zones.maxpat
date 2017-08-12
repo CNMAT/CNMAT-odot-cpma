@@ -5,7 +5,7 @@
 			"major" : 7,
 			"minor" : 3,
 			"revision" : 4,
-			"architecture" : "x64",
+			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
@@ -73,7 +73,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 315.0, 285.0, 150.0, 61.0 ],
-					"text" : "/x : 0.4,\n/num/zones : 36,\n/location : 14",
+					"text" : "/x : 0.55,\n/num/bins : 8,\n/location : 4",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -85,9 +85,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "FullPacket" ],
-					"patching_rect" : [ 315.0, 180.0, 124.0, 22.0 ],
+					"patching_rect" : [ 315.0, 180.0, 114.0, 22.0 ],
 					"style" : "",
-					"text" : "o.pack /x /num/zones"
+					"text" : "o.pack /x /num/bins"
 				}
 
 			}
@@ -102,7 +102,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
 					"patching_rect" : [ 315.0, 210.0, 308.0, 46.0 ],
-					"text" : "/num/zones ??= 8,\n/location = int32(round(/x * /num/zones))",
+					"text" : "/num/bins ??= 8,\n/location = int32(round(/x * /num/bins))",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
