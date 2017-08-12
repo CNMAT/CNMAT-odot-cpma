@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 84.0, 107.0, 1169.0, 786.0 ],
+		"rect" : [ 84.0, 107.0, 963.0, 721.0 ],
 		"bgcolor" : [ 0.92549, 0.92549, 0.92549, 1.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
@@ -39,25 +39,12 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
-					"comment" : "",
-					"id" : "obj-14",
-					"index" : 0,
-					"maxclass" : "outlet",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 563.0, 528.0, 30.0, 30.0 ],
-					"style" : ""
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-13",
 					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 738.0, 70.0, 150.0, 33.0 ],
+					"patching_rect" : [ 741.0, 43.0, 150.0, 33.0 ],
 					"style" : "",
 					"text" : "adrian freed 2011\njeff lubow rev 2017"
 				}
@@ -70,7 +57,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 19.0, 146.0, 29.5, 22.0 ],
+					"patching_rect" : [ 22.0, 119.0, 29.5, 22.0 ],
 					"style" : "",
 					"text" : "> 0"
 				}
@@ -85,36 +72,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 507.0, 39.0, 79.0, 22.0 ],
+					"patching_rect" : [ 510.0, 12.0, 72.0, 22.0 ],
 					"style" : "",
-					"text" : "loadmess #1"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontface" : 0,
-					"fontsize" : 12.0,
-					"id" : "obj-11",
-					"maxclass" : "o.display",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 711.0, 331.0, 377.0, 34.0 ],
-					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-9",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "FullPacket" ],
-					"patching_rect" : [ 751.0, 305.0, 88.0, 22.0 ],
-					"style" : "",
-					"text" : "o.select /count"
+					"text" : "loadmess 2"
 				}
 
 			}
@@ -126,7 +86,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 628.0, 312.0, 24.0, 24.0 ],
+					"patching_rect" : [ 615.0, 284.0, 24.0, 24.0 ],
 					"style" : ""
 				}
 
@@ -138,7 +98,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 612.0, 360.0, 34.0, 22.0 ],
+					"patching_rect" : [ 531.0, 343.0, 34.0, 22.0 ],
 					"style" : "",
 					"text" : "gate"
 				}
@@ -149,11 +109,13 @@
 					"fontface" : 0,
 					"fontsize" : 12.0,
 					"id" : "obj-4",
+					"linecount" : 16,
 					"maxclass" : "o.display",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 612.0, 396.0, 377.0, 34.0 ],
+					"patching_rect" : [ 531.0, 377.0, 377.0, 238.0 ],
+					"text" : "/count : 1,\n/0/frame : 841,\n/0/angle : 1.5708,\n/0/major : 0.,\n/0/minor : 0.,\n/0/x : 0.588632,\n/0/y : 0.77603,\n/0/velocity/x : 0.,\n/0/velocity/y : 0.,\n/0/id : 8,\n/0/state : 7,\n/0/size : 0.,\n/0/stripnumber : 2.94316,\n/0/came/on : 0,\n/0/is/on : 0,\n/0/came/off : 1",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -265,7 +227,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 563.0, 259.0, 179.0, 22.0 ],
+					"patching_rect" : [ 566.0, 232.0, 179.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -645,7 +607,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 563.0, 228.0, 107.0, 22.0 ],
+					"patching_rect" : [ 566.0, 201.0, 107.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -668,7 +630,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 543.0, 331.0, 55.0, 22.0 ],
+					"patching_rect" : [ 546.0, 304.0, 55.0, 22.0 ],
 					"style" : "",
 					"text" : "o.collect"
 				}
@@ -683,7 +645,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "bang", "bang", "" ],
-					"patching_rect" : [ 507.0, 194.0, 46.0, 22.0 ],
+					"patching_rect" : [ 510.0, 167.0, 46.0, 22.0 ],
 					"style" : "",
 					"text" : "t b b l"
 				}
@@ -1720,7 +1682,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 507.0, 156.0, 95.0, 22.0 ],
+					"patching_rect" : [ 510.0, 129.0, 95.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -1790,7 +1752,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 998.0, 141.0, 62.0, 22.0 ],
-									"presentation_rect" : [ 1012.0, 138.0, 0.0, 0.0 ],
 									"style" : "",
 									"text" : "gate"
 								}
@@ -2755,7 +2716,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 19.0, 191.0, 211.5, 22.0 ],
+					"patching_rect" : [ 22.0, 164.0, 211.5, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -2776,7 +2737,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "list", "list", "int", "" ],
-					"patching_rect" : [ 19.0, 243.0, 459.0, 423.0 ]
+					"patching_rect" : [ 22.0, 216.0, 459.0, 423.0 ]
 				}
 
 			}
@@ -2789,7 +2750,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "list", "list" ],
-					"patching_rect" : [ 507.0, 93.0, 95.0, 24.0 ],
+					"patching_rect" : [ 510.0, 66.0, 95.0, 24.0 ],
 					"style" : "",
 					"text" : "fingerpinger"
 				}
@@ -2912,15 +2873,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-4", 0 ],
-					"order" : 1,
-					"source" : [ "obj-5", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-9", 0 ],
-					"order" : 0,
 					"source" : [ "obj-5", 0 ]
 				}
 
@@ -2936,13 +2888,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-5", 0 ],
 					"source" : [ "obj-8", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-11", 0 ],
-					"source" : [ "obj-9", 0 ]
 				}
 
 			}
@@ -2977,10 +2922,6 @@
 			}
 , 			{
 				"name" : "o.display.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.select.mxo",
 				"type" : "iLaX"
 			}
  ],
