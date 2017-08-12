@@ -38,6 +38,69 @@
 		"subpatcher_template" : "gridded",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-24",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 345.0, 546.0, 118.0, 20.0 ],
+					"style" : "",
+					"text" : "string concatenation"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 0,
+					"fontsize" : 12.0,
+					"id" : "obj-20",
+					"linecount" : 3,
+					"maxclass" : "o.display",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 90.0, 615.0, 243.0, 61.0 ],
+					"presentation_rect" : [ 90.0, 649.0, 0.0, 0.0 ],
+					"text" : "/list/1 : [\"r\", \"g\", \"b\"],\n/list/2 : [\"a\", \"b\", \"c\"],\n/newlist : [\"ra\", \"gb\", \"bc\"]",
+					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 0,
+					"fontsize" : 12.0,
+					"id" : "obj-21",
+					"linecount" : 2,
+					"maxclass" : "o.compose",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 90.0, 480.0, 218.0, 38.0 ],
+					"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 28, 47, 108, 105, 115, 116, 47, 49, 0, 44, 115, 115, 115, 0, 0, 0, 0, 114, 0, 0, 0, 103, 0, 0, 0, 98, 0, 0, 0, 0, 0, 0, 28, 47, 108, 105, 115, 116, 47, 50, 0, 44, 115, 115, 115, 0, 0, 0, 0, 97, 0, 0, 0, 98, 0, 0, 0, 99, 0, 0, 0 ],
+					"saved_bundle_length" : 80,
+					"text" : "/list/1 : [\"r\", \"g\", \"b\"],\n/list/2 : [\"a\", \"b\", \"c\"]",
+					"textcolor" : [ 0.188, 0.188, 0.188, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 0,
+					"fontsize" : 12.0,
+					"id" : "obj-22",
+					"maxclass" : "o.expr.codebox",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "FullPacket", "FullPacket" ],
+					"patching_rect" : [ 90.0, 540.0, 243.0, 32.0 ],
+					"presentation_rect" : [ 90.0, 574.0, 0.0, 0.0 ],
+					"text" : "/newlist = /list/1 + /list/2",
+					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-33",
 					"maxclass" : "live.line",
 					"numinlets" : 1,
@@ -62,7 +125,7 @@
 					"maxclass" : "live.line",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 490.0, 553.5, 150.0, 5.0 ]
+					"patching_rect" : [ 775.0, 553.5, 150.0, 5.0 ]
 				}
 
 			}
@@ -72,7 +135,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 643.5, 546.0, 88.0, 20.0 ],
+					"patching_rect" : [ 928.5, 546.0, 88.0, 20.0 ],
 					"style" : "",
 					"text" : "accessing lists"
 				}
@@ -109,7 +172,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 285.0, 675.0, 235.0, 33.0 ],
+					"patching_rect" : [ 570.0, 675.0, 235.0, 33.0 ],
 					"style" : "",
 					"text" : "note the difference between accessing an element in a list and appending"
 				}
@@ -124,7 +187,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 285.0, 615.0, 243.0, 34.0 ],
+					"patching_rect" : [ 570.0, 615.0, 243.0, 34.0 ],
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -138,7 +201,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 285.0, 480.0, 181.0, 24.0 ],
+					"patching_rect" : [ 570.0, 480.0, 181.0, 24.0 ],
 					"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 32, 47, 109, 121, 108, 105, 115, 116, 0, 44, 105, 105, 105, 105, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 2, 0, 0, 0, 3, 0, 0, 0, 4 ],
 					"saved_bundle_length" : 52,
 					"text" : "/mylist : [1, 2, 3, 4]",
@@ -155,7 +218,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
-					"patching_rect" : [ 285.0, 540.0, 185.0, 32.0 ],
+					"patching_rect" : [ 570.0, 540.0, 185.0, 32.0 ],
 					"text" : "/2nd/elem = /mylist[[1]]",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
@@ -446,6 +509,20 @@
 				"patchline" : 				{
 					"destination" : [ "obj-17", 0 ],
 					"source" : [ "obj-19", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-22", 0 ],
+					"source" : [ "obj-21", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-20", 0 ],
+					"source" : [ "obj-22", 0 ]
 				}
 
 			}
