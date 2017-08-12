@@ -82,9 +82,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "FullPacket" ],
-					"patching_rect" : [ 60.0, 150.0, 77.0, 22.0 ],
+					"patching_rect" : [ 60.0, 150.0, 116.0, 22.0 ],
 					"style" : "",
-					"text" : "o.pack /rand"
+					"text" : "o.pack /r/uniform/int"
 				}
 
 			}
@@ -98,8 +98,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 60.0, 480.0, 150.0, 48.0 ],
-					"text" : "/rand : 71,\n/was/rand : 44",
+					"patching_rect" : [ 60.0, 480.0, 210.0, 48.0 ],
+					"text" : "/r/uniform/int : 13,\n/was/r/uniform/int : 15",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
