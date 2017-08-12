@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 54.0, 86.0, 640.0, 480.0 ],
+		"rect" : [ 54.0, 86.0, 665.0, 480.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,6 +38,19 @@
 		"subpatcher_template" : "gridded",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-5",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 480.0, 184.0, 150.0, 33.0 ],
+					"style" : "",
+					"text" : "what is FullPacket?\ndoes it get used directly?"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-15",
 					"maxclass" : "button",
 					"numinlets" : 1,
@@ -56,7 +69,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 90.0, 300.0, 90.0, 22.0 ],
-					"presentation_rect" : [ 94.0, 299.0, 0.0, 0.0 ],
 					"style" : ""
 				}
 
@@ -66,13 +78,11 @@
 					"fontface" : 0,
 					"fontsize" : 12.0,
 					"id" : "obj-12",
-					"linecount" : 2,
 					"maxclass" : "o.display",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 210.0, 360.0, 150.0, 48.0 ],
-					"text" : "/param : 1,\n/param/2 : 5",
+					"patching_rect" : [ 210.0, 360.0, 150.0, 34.0 ],
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
