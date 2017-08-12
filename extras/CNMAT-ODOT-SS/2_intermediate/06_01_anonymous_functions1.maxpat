@@ -5,11 +5,11 @@
 			"major" : 7,
 			"minor" : 3,
 			"revision" : 4,
-			"architecture" : "x64",
+			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 163.0, 93.0, 707.0, 607.0 ],
+		"rect" : [ 56.0, 79.0, 874.0, 607.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,17 +38,114 @@
 		"subpatcher_template" : "gridded",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-15",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 315.0, 30.0, 150.0, 20.0 ],
+					"style" : "",
+					"text" : "send in some addresses"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-10",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 210.0, 30.0, 60.0, 22.0 ],
+					"style" : "",
+					"text" : "loadbang"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"fontface" : 0,
 					"fontsize" : 11.0,
-					"id" : "obj-9",
-					"linecount" : 11,
-					"maxclass" : "o.expr.codebox",
+					"id" : "obj-4",
+					"linecount" : 12,
+					"maxclass" : "o.compose",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 210.0, 61.5, 419.0, 160.0 ],
+					"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 12, 47, 105, 100, 0, 44, 105, 0, 0, 0, 0, 0, 22, 0, 0, 0, 20, 47, 112, 104, 97, 115, 101, 0, 0, 44, 100, 0, 0, 63, -32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 24, 47, 115, 99, 97, 108, 101, 47, 109, 105, 110, 0, 0, 44, 100, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 24, 47, 115, 99, 97, 108, 101, 47, 109, 97, 120, 0, 0, 44, 100, 0, 0, 64, 86, -128, 0, 0, 0, 0, 0, 0, 0, 0, 48, 47, 101, 118, 97, 108, 47, 108, 105, 115, 116, 0, 0, 44, 115, 115, 0, 47, 102, 117, 110, 99, 100, 101, 102, 47, 105, 110, 118, 101, 114, 116, 0, 47, 102, 117, 110, 99, 100, 101, 102, 47, 115, 99, 97, 108, 101, 0, 0, 0, 0, 0, 76, 47, 102, 117, 110, 99, 100, 101, 102, 47, 105, 110, 118, 101, 114, 116, 0, 44, 115, 0, 0, 97, 115, 115, 105, 103, 110, 40, 10, 32, 32, 34, 47, 34, 32, 43, 32, 115, 116, 114, 105, 110, 103, 40, 47, 105, 100, 41, 32, 43, 32, 34, 47, 105, 110, 118, 101, 114, 116, 34, 44, 32, 49, 46, 32, 45, 32, 47, 112, 104, 97, 115, 101, 10, 41, 0, 0, 0, 0, 0, 112, 47, 102, 117, 110, 99, 100, 101, 102, 47, 115, 99, 97, 108, 101, 0, 0, 44, 115, 0, 0, 97, 115, 115, 105, 103, 110, 40, 10, 32, 32, 34, 47, 34, 32, 43, 32, 115, 116, 114, 105, 110, 103, 40, 47, 105, 100, 41, 32, 43, 32, 10, 32, 32, 34, 47, 115, 99, 97, 108, 101, 34, 44, 32, 115, 99, 97, 108, 101, 40, 47, 112, 104, 97, 115, 101, 44, 32, 48, 46, 44, 32, 49, 46, 44, 32, 47, 115, 99, 97, 108, 101, 47, 109, 105, 110, 44, 32, 47, 115, 99, 97, 108, 101, 47, 109, 97, 120, 41, 10, 41, 0, 0 ],
+					"saved_bundle_length" : 360,
+					"text" : "/id : 22,\n/phase : 0.5,\n/scale/min : 0.,\n/scale/max : 90.,\n/eval/list : [\"/funcdef/invert\", \"/funcdef/scale\"],\n/funcdef/invert : \"assign(\n  \\\"/\\\" + string(/id) + \\\"/invert\\\", 1. - /phase\n)\",\n/funcdef/scale : \"assign(\n  \\\"/\\\" + string(/id) + \n  \\\"/scale\\\", scale(/phase, 0., 1., /scale/min, /scale/max)\n)\"",
+					"textcolor" : [ 0.188, 0.188, 0.188, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-13",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 90.0, 315.0, 332.0, 20.0 ],
+					"style" : "",
+					"text" : "map( <function>, <expression>, <arguments to expression>)"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"format" : 6,
+					"id" : "obj-8",
+					"maxclass" : "flonum",
+					"maximum" : 1.0,
+					"minimum" : 0.0,
 					"numinlets" : 1,
 					"numoutlets" : 2,
-					"outlettype" : [ "FullPacket", "FullPacket" ],
-					"patching_rect" : [ 30.0, 180.0, 528.0, 156.0 ],
-					"text" : "/engine/assign/amp = \"assign(\n  \\\"/source/\\\" + string(/sampler/id) + \\\"/beam/amp\\\", 1.\n)\",\n/engine/assign/dir/vert = \"assign(\n  \\\"/source/\\\" + string(/sampler/id) + \n  \\\"/beam/dir/vert\\\", scale(/sampler/sync, 0., 1., /vert/start, /vert/end)\n)\",\n/engine/assign/dir/horiz = \"assign(\n  \\\"/source/\\\" + string(/sampler/id) + \n  \\\"/beam/dir/horiz\\\", scale(/sampler/sync, 0., 1., /horiz/start, /horiz/end)\n)\"",
-					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 30.0, 199.5, 50.0, 22.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-5",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "FullPacket" ],
+					"patching_rect" : [ 30.0, 315.0, 50.0, 22.0 ],
+					"style" : "",
+					"text" : "o.union"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-3",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "FullPacket" ],
+					"patching_rect" : [ 30.0, 240.0, 85.0, 22.0 ],
+					"style" : "",
+					"text" : "o.pack /phase"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 0,
+					"fontsize" : 12.0,
+					"id" : "obj-1",
+					"linecount" : 14,
+					"maxclass" : "o.display",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 390.0, 345.0, 445.0, 211.0 ],
+					"text" : "/phase : 0.217,\n/id : 22,\n/scale/min : 0.,\n/scale/max : 90.,\n/eval/list : [\"/funcdef/invert\", \"/funcdef/scale\"],\n/funcdef/invert : \"assign(\n  \\\"/\\\" + string(/id) + \\\"/invert\\\", 1. - /phase\n)\",\n/funcdef/scale : \"assign(\n  \\\"/\\\" + string(/id) + \n  \\\"/scale\\\", scale(/phase, 0., 1., /scale/min, /scale/max)\n)\",\n/22/invert : 0.783,\n/22/scale : 19.53",
+					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
 			}
@@ -68,31 +165,13 @@
 , 			{
 				"box" : 				{
 					"fontface" : 0,
-					"fontsize" : 11.0,
-					"id" : "obj-4",
-					"linecount" : 9,
-					"maxclass" : "o.compose",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 30.0, 30.0, 630.0, 123.0 ],
-					"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 20, 47, 102, 105, 108, 101, 110, 97, 109, 101, 0, 0, 0, 44, 115, 0, 0, 102, 111, 111, 0, 0, 0, 0, 20, 47, 115, 97, 109, 112, 108, 101, 114, 47, 105, 100, 0, 44, 105, 0, 0, 0, 0, 0, 1, 0, 0, 0, 28, 47, 115, 97, 109, 112, 108, 101, 114, 47, 115, 121, 110, 99, 0, 0, 0, 44, 100, 0, 0, 63, -32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 28, 47, 115, 101, 108, 101, 99, 116, 47, 102, 105, 108, 101, 110, 97, 109, 101, 0, 0, 0, 0, 44, 115, 0, 0, 102, 111, 111, 0, 0, 0, 0, 24, 47, 104, 111, 114, 105, 122, 47, 115, 116, 97, 114, 116, 0, 0, 0, 0, 44, 105, 0, 0, 0, 0, 0, 90, 0, 0, 0, 20, 47, 104, 111, 114, 105, 122, 47, 101, 110, 100, 0, 0, 44, 105, 0, 0, 0, 0, 1, -62, 0, 0, 0, 24, 47, 118, 101, 114, 116, 47, 115, 116, 97, 114, 116, 0, 44, 100, 0, 0, 64, 86, -128, 0, 0, 0, 0, 0, 0, 0, 0, 24, 47, 118, 101, 114, 116, 47, 101, 110, 100, 0, 0, 0, 44, 100, 0, 0, 64, 86, -128, 0, 0, 0, 0, 0, 0, 0, 0, 96, 47, 101, 110, 103, 105, 110, 101, 47, 101, 118, 97, 108, 0, 0, 0, 0, 44, 115, 115, 115, 0, 0, 0, 0, 47, 101, 110, 103, 105, 110, 101, 47, 97, 115, 115, 105, 103, 110, 47, 97, 109, 112, 0, 0, 47, 101, 110, 103, 105, 110, 101, 47, 97, 115, 115, 105, 103, 110, 47, 100, 105, 114, 47, 118, 101, 114, 116, 0, 47, 101, 110, 103, 105, 110, 101, 47, 97, 115, 115, 105, 103, 110, 47, 100, 105, 114, 47, 104, 111, 114, 105, 122, 0, 0, 0, 0 ],
-					"saved_bundle_length" : 336,
-					"text" : "/filename : \"foo\",\n/sampler/id : 1,\n/sampler/sync : 0.5,\n/select/filename : \"foo\",\n/horiz/start : 90,\n/horiz/end : 450,\n/vert/start : 90.,\n/vert/end : 90.,\n/engine/eval : [\"/engine/assign/amp\", \"/engine/assign/dir/vert\", \"/engine/assign/dir/horiz\"]",
-					"textcolor" : [ 0.188, 0.188, 0.188, 1.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontface" : 0,
 					"fontsize" : 12.0,
 					"id" : "obj-2",
 					"maxclass" : "o.display",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 30.0, 495.0, 315.0, 34.0 ],
+					"patching_rect" : [ 30.0, 495.0, 236.0, 34.0 ],
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -106,8 +185,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
-					"patching_rect" : [ 30.0, 360.0, 316.0, 31.0 ],
-					"text" : "map(lambda([a], eval(value(a))), /engine/eval)",
+					"patching_rect" : [ 30.0, 360.0, 303.0, 31.0 ],
+					"text" : "map(lambda([a], eval(value(a))), /eval/list)",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
@@ -115,15 +194,45 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
-					"destination" : [ "obj-7", 0 ],
+					"destination" : [ "obj-4", 0 ],
+					"source" : [ "obj-10", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
+					"order" : 0,
 					"source" : [ "obj-11", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-9", 0 ],
+					"destination" : [ "obj-7", 0 ],
+					"order" : 1,
+					"source" : [ "obj-11", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-5", 0 ],
+					"source" : [ "obj-3", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-5", 1 ],
 					"source" : [ "obj-4", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-11", 0 ],
+					"source" : [ "obj-5", 0 ]
 				}
 
 			}
@@ -136,8 +245,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-11", 0 ],
-					"source" : [ "obj-9", 0 ]
+					"destination" : [ "obj-3", 0 ],
+					"source" : [ "obj-8", 0 ]
 				}
 
 			}
@@ -151,11 +260,19 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "o.compose.mxo",
+				"name" : "o.select.mxo",
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "o.select.mxo",
+				"name" : "o.pack.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.union.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.compose.mxo",
 				"type" : "iLaX"
 			}
  ],
