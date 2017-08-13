@@ -13,7 +13,7 @@ Once these packages are installed, the materials in this set of files can be use
 
 1. Please first download these two packages and install them into `~/Documents/Max/Packages`
 
-1. options -> file preferences -> '+' key -> navigate to odot package
+1. options -> file preferences -> '+' button -> navigate to odot package
 
 1. add one for "/dev" - `/Max 7/Packages/odot/dev`
 
