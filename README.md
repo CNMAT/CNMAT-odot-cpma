@@ -21,4 +21,4 @@ Once these packages are installed, the materials in this set of files can be use
 
 1. Then download this package by [clicking here](https://github.com/CNMAT/CNMAT-ODOT-SS/archive/master.zip), and install in the same location (`~/Documents/Max/Packages`)
 
-1. Open the file odot_intro00_atom_to_bundle.maxpat, found in `~/Documents/Max/Packages/CNMAT-ODOT/SS/extras/1_intro` and check the Max console for errors.  If there are none, you've successfully installed.
+1. Open the file 00_maxdata_to_odot.maxpat, found in `~/Documents/Max/Packages/CNMAT-ODOT/SS/extras/1_intro` and check the Max console for errors.  If there are none, you've successfully installed.
