@@ -38,6 +38,19 @@
 		"subpatcher_template" : "gridded",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-3",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "FullPacket", "FullPacket" ],
+					"patching_rect" : [ 540.0, 315.0, 144.0, 22.0 ],
+					"style" : "",
+					"text" : "o.if bound(/time/start/rec)"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-8",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -70,7 +83,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-6",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -185,7 +198,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 360.0, 165.0, 40.0, 22.0 ],
+					"patching_rect" : [ 675.0, 150.0, 40.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -204,11 +217,11 @@
 					"id" : "obj-2",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 4,
-					"outlettype" : [ "", "", "", "FullPacket" ],
-					"patching_rect" : [ 180.0, 105.0, 133.0, 22.0 ],
+					"numoutlets" : 6,
+					"outlettype" : [ "", "", "", "", "", "FullPacket" ],
+					"patching_rect" : [ 180.0, 75.0, 209.0, 22.0 ],
 					"style" : "",
-					"text" : "o.route /play /rec /clear"
+					"text" : "o.route /play /rec /clear /resume /stop"
 				}
 
 			}
@@ -216,12 +229,12 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-1",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 180.0, 60.0, 30.0, 30.0 ],
+					"patching_rect" : [ 180.0, 30.0, 30.0, 30.0 ],
 					"style" : ""
 				}
 
@@ -331,7 +344,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
-					"patching_rect" : [ 302.0, 294.0, 263.0, 43.0 ],
+					"patching_rect" : [ 540.0, 360.0, 263.0, 43.0 ],
 					"text" : "/diff = /time - /time/start/rec, \ndelete(/time), delete(/time/start/rec)",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
@@ -344,7 +357,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "FullPacket" ],
-					"patching_rect" : [ 302.0, 264.0, 50.0, 22.0 ],
+					"patching_rect" : [ 540.0, 270.0, 50.0, 22.0 ],
 					"style" : "",
 					"text" : "o.union"
 				}
@@ -357,7 +370,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 333.0, 226.0, 136.0, 22.0 ],
+					"patching_rect" : [ 690.0, 240.0, 136.0, 22.0 ],
 					"style" : "",
 					"text" : "o.timetag /time/start/rec"
 				}
@@ -398,7 +411,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 302.0, 196.0, 89.0, 22.0 ],
+					"patching_rect" : [ 540.0, 240.0, 89.0, 22.0 ],
 					"style" : "",
 					"text" : "o.timetag /time"
 				}
@@ -462,7 +475,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-9", 0 ],
-					"source" : [ "obj-2", 3 ]
+					"source" : [ "obj-2", 5 ]
 				}
 
 			}
@@ -470,6 +483,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-5", 0 ],
 					"source" : [ "obj-29", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-50", 0 ],
+					"source" : [ "obj-3", 0 ]
 				}
 
 			}
@@ -503,7 +523,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-50", 0 ],
+					"destination" : [ "obj-3", 0 ],
 					"source" : [ "obj-49", 0 ]
 				}
 
@@ -615,51 +635,6 @@
 
 			}
  ],
-		"dependency_cache" : [ 			{
-				"name" : "o.genrand.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-ODOT-SS/patchers",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "o.table.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.timetag.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.if.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.union.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.expr.codebox.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.schedule.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.route.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.pack.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.compose.mxo",
-				"type" : "iLaX"
-			}
- ],
-		"autosave" : 0,
 		"bgfillcolor_type" : "gradient",
 		"bgfillcolor_color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
 		"bgfillcolor_color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
