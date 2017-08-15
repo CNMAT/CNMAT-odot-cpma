@@ -850,19 +850,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-33",
-					"linecount" : 2,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 720.0, 225.0, 150.0, 33.0 ],
-					"style" : "",
-					"text" : "make example with spat audio / clusterX"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-17",
 					"maxclass" : "message",
 					"numinlets" : 2,
