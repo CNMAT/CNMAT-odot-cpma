@@ -858,8 +858,8 @@
 					"id" : "obj-31",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "signal", "signal" ],
+					"numoutlets" : 3,
+					"outlettype" : [ "signal", "signal", "" ],
 					"patching_rect" : [ 30.0, 465.0, 263.0, 22.0 ],
 					"style" : "",
 					"text" : "poly~ o.grainplay.stream @voices 10 @target 0"
@@ -871,13 +871,13 @@
 					"fontface" : 0,
 					"fontsize" : 10.0,
 					"id" : "obj-21",
-					"linecount" : 15,
+					"linecount" : 13,
 					"maxclass" : "o.expr.codebox",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
-					"patching_rect" : [ 30.0, 240.0, 602.0, 188.0 ],
-					"text" : "/num/fingers = length(/touch/finger_stack),\n/idx = aseq(1, length(/touch/state)),\n/hand/spread = sum(/touch/distances) / length(/touch/distances),\nmap(\n  lambda([ts, tmx, g, i], \n    progn(\n      assign(\"/\" + i + \"/metro/on\", ts), \n      assign(\"/\" + i + \"/start/phase\", tmx), \n      assign(\"/\" + i + \"/gain\", g),\n      assign(\"/\" + i + \"/buffer\", \"lg.\" + i),\n      assign(\"/\" + i + \"/cutoff\", clip(scale(/hand/spread, 0.38, 0.77, 60, 12000), 60, 12000)),\n      assign(\"/\" + i + \"/metro/period\", scale(/hand/spread, 0.4, 0.77, 5, 600))\n    )\n  ), /touch/state, /touch/move/x, /touch/move/y, /idx  \n)",
+					"patching_rect" : [ 30.0, 240.0, 602.0, 166.0 ],
+					"text" : "/num/fingers = length(/touch/finger_stack),\n/idx = aseq(1, length(/touch/state)),\n/hand/spread = sum(/touch/distances) / length(/touch/distances),\nmap(\n  lambda([ts, tmx, g, i], \n    assign(\"/\" + i + \"/metro/on\", ts), \n    assign(\"/\" + i + \"/start/phase\", tmx), \n    assign(\"/\" + i + \"/gain\", g),\n    assign(\"/\" + i + \"/buffer\", \"lg.\" + i),\n    assign(\"/\" + i + \"/cutoff\", clip(scale(/hand/spread, 0.38, 0.77, 60, 12000), 60, 12000)),\n    assign(\"/\" + i + \"/metro/period\", scale(/hand/spread, 0.4, 0.77, 5, 600))\n  ), /touch/state, /touch/move/x, /touch/move/y, /idx  \n)",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
