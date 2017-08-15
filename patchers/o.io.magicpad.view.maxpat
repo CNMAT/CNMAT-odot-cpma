@@ -109,13 +109,13 @@
 					"fontface" : 0,
 					"fontsize" : 12.0,
 					"id" : "obj-4",
-					"linecount" : 16,
+					"linecount" : 49,
 					"maxclass" : "o.display",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 531.0, 377.0, 377.0, 238.0 ],
-					"text" : "/count : 1,\n/0/frame : 841,\n/0/angle : 1.5708,\n/0/major : 0.,\n/0/minor : 0.,\n/0/x : 0.588632,\n/0/y : 0.77603,\n/0/velocity/x : 0.,\n/0/velocity/y : 0.,\n/0/id : 8,\n/0/state : 7,\n/0/size : 0.,\n/0/stripnumber : 2.94316,\n/0/came/on : 0,\n/0/is/on : 0,\n/0/came/off : 1",
+					"patching_rect" : [ 531.0, 377.0, 377.0, 686.0 ],
+					"text" : "/1/frame : 2556,\n/1/angle : 3.13507,\n/1/major : 12.45,\n/1/minor : 8.36,\n/1/x : 0.626524,\n/1/y : 0.015634,\n/1/velocity/x : -0.0161067,\n/1/velocity/y : 0.0018095,\n/1/id : 8,\n/1/state : 4,\n/1/size : 0.644531,\n/1/stripnumber : 3.13262,\n/1/came/on : 0,\n/1/is/on : 1,\n/1/came/off : 0,\n/count : 1,\n/0/frame : 2556,\n/0/angle : 1.5708,\n/0/major : 8.97,\n/0/minor : 8.08,\n/0/x : 0.564179,\n/0/y : 0.570643,\n/0/velocity/x : 0.0978789,\n/0/velocity/y : 0.123046,\n/0/id : 10,\n/0/state : 4,\n/0/size : 0.617188,\n/0/stripnumber : 2.82089,\n/0/came/on : 0,\n/0/is/on : 1,\n/0/came/off : 0,\n/x : [0.626524, 0.564179],\n/y : [0.015634, 0.570643],\n/size : [0.644531, 0.617188],\n/angle : [3.13507, 1.5708],\n/average/x : 0.595351,\n/average/y : 0.293138,\n/average/size : 0.630859,\n/average/angle : 2.35293,\n/min/x : 0.564179,\n/min/y : 0.015634,\n/min/size : 0.617188,\n/min/angle : 1.5708,\n/max/x : 0.626524,\n/max/y : 0.570643,\n/max/size : 0.644531,\n/max/angle : 3.13507,\n/centroid/x : 0.596027,\n/centroid/y : 0.287124",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -403,7 +403,7 @@
 									"outlettype" : [ "", "", "", "", "", "FullPacket" ],
 									"patching_rect" : [ 104.0, 114.0, 283.0, 22.0 ],
 									"style" : "",
-									"text" : "o.route /[0-9]/x /[0-9]/y /[0-9]/size /[0-9]/angle /count"
+									"text" : "o.route /*/x /*/y /*/size /*/angle /count"
 								}
 
 							}
