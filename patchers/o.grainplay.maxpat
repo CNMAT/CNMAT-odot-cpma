@@ -467,6 +467,10 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 244.0, 650.0, 44.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"attr_comment" : ""
+					}
+,
 					"style" : "",
 					"text" : "out~ 2"
 				}
@@ -479,6 +483,10 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 140.0, 650.0, 44.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"attr_comment" : ""
+					}
+,
 					"style" : "",
 					"text" : "out~ 1"
 				}
@@ -599,10 +607,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 68.5, 12.0, 30.0, 22.0 ],
-					"saved_object_attributes" : 					{
-						"attr_comment" : ""
-					}
-,
 					"style" : "",
 					"text" : "in 1"
 				}
@@ -858,7 +862,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
 					"patching_rect" : [ 100.0, 255.0, 427.0, 52.0 ],
-					"text" : "/start/ms = clip(/start/phase * /total/ms, 0, /total/ms - /dur/ms), \n/end/ms = /start/ms + /dur/ms,\n/linelist = [/start/ms, 0., /start/ms + /dur/ms, /dur/ms]",
+					"text" : "/start/ms = clip(/start/phase * /total/ms, 0, /total/ms - /dur/ms), \n/end/ms = /start/ms + /dur/ms,\n/linelist = [/start/ms, 0., /end/ms, /dur/ms]",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
@@ -1363,25 +1367,7 @@
 				}
 
 			}
- ],
-		"dependency_cache" : [ 			{
-				"name" : "o.expr.codebox.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.route.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.pack.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.union.mxo",
-				"type" : "iLaX"
-			}
- ],
-		"autosave" : 0
+ ]
 	}
 
 }
