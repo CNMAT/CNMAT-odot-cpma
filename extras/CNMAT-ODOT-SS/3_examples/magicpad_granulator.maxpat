@@ -160,7 +160,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 128.0, 280.5, 30.0, 30.0 ],
-									"presentation_rect" : [ 128.0, 280.5, 0.0, 0.0 ],
 									"style" : ""
 								}
 
@@ -286,7 +285,6 @@
 													"numinlets" : 1,
 													"numoutlets" : 0,
 													"patching_rect" : [ 204.0, 580.0, 30.0, 30.0 ],
-													"presentation_rect" : [ 202.0, 580.0, 0.0, 0.0 ],
 													"style" : ""
 												}
 
