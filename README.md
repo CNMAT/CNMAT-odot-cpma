@@ -14,7 +14,7 @@ Once these packages are installed, the materials in this set of files can be use
 ## Installation:
 
 1. Please first download these three packages and install them into whichever directory pertains to your computer:
-    - MacOSX: `~/Documents/Max/Packages`
+    - MacOSX: `~/Documents/Max\ 7/Packages`
     - Windows: `\Documents\Max 7\Packages`
 
 2. Launch Max
@@ -22,8 +22,8 @@ Once these packages are installed, the materials in this set of files can be use
 3. Navigate to:  `options -> file preferences`, and look for the '+' button
 
 4. Navigate to odot package
-    - Add one for "/dev" - `/Max 7/Packages/odot/dev`
-    - Add one for "/deprecated" - `/Max 7/Packages/odot/deprecated`
+    - Add one for `/dev` - `/Max\ 7/Packages/odot/dev` (see above for Windows path)
+    - Add one for `/deprecated` - `/Max\ 7/Packages/odot/deprecated` (see above for WIndows path)
 
 5. Then download this package by [clicking here](https://github.com/CNMAT/CNMAT-ODOT-CPMA/releases/download/1.0a/CNMAT-ODOT-CPMA.zip), and install in the same location mentioned in step 1.
 
