@@ -5,11 +5,11 @@
 			"major" : 7,
 			"minor" : 3,
 			"revision" : 4,
-			"architecture" : "x86",
+			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 54.0, 86.0, 1023.0, 528.0 ],
+		"rect" : [ 270.0, 191.0, 1023.0, 528.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -44,7 +44,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 503.5, 144.0, 24.0, 24.0 ],
-					"presentation_rect" : [ 401.0, 150.0, 0.0, 0.0 ],
 					"style" : ""
 				}
 
@@ -86,7 +85,7 @@
 							"major" : 7,
 							"minor" : 3,
 							"revision" : 4,
-							"architecture" : "x86",
+							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
@@ -142,8 +141,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 50.0, 156.0, 260.0, 88.0 ],
-									"text" : "/doc/category/math/operator/logical/& : \"&\",\n/doc/category/math/operator/logical/| : \"|\",\n/doc/category/math/operator/logical/&& : \"&&\",\n/doc/category/math/operator/logical/|| : \"||\",\n/doc/category/math/operator/logical/! : \"!\"",
-									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
+									"text" : "/doc/category/math/operator/logical/& : \"&\",\n/doc/category/math/operator/logical/| : \"|\",\n/doc/category/math/operator/logical/&& : \"&&\",\n/doc/category/math/operator/logical/|| : \"||\",\n/doc/category/math/operator/logical/! : \"!\""
 								}
 
 							}
@@ -157,8 +155,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "FullPacket", "FullPacket" ],
-									"patching_rect" : [ 50.0, 95.0, 150.0, 32.0 ],
-									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+									"patching_rect" : [ 50.0, 95.0, 150.0, 32.0 ]
 								}
 
 							}
@@ -250,14 +247,11 @@
 					"fontface" : 0,
 					"fontsize" : 12.0,
 					"id" : "obj-15",
-					"linecount" : 2,
 					"maxclass" : "o.display",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 870.0, 331.0, 113.0, 48.0 ],
-					"text" : "/ramp : 1.,\n/threshold : 1",
-					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
+					"patching_rect" : [ 870.0, 331.0, 113.0, 34.0 ]
 				}
 
 			}
@@ -292,14 +286,11 @@
 					"fontface" : 0,
 					"fontsize" : 12.0,
 					"id" : "obj-18",
-					"linecount" : 2,
 					"maxclass" : "o.display",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 690.0, 436.0, 150.0, 48.0 ],
-					"text" : "/ramp : 1.,\n/threshold : 1",
-					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
+					"patching_rect" : [ 690.0, 436.0, 150.0, 34.0 ]
 				}
 
 			}
@@ -327,8 +318,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
 					"patching_rect" : [ 690.0, 331.0, 135.0, 59.0 ],
-					"text" : "if(/ramp > 0.5, \n/threshold = 1\n)",
-					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+					"text" : "if(/ramp > 0.5, \n/threshold = 1\n)"
 				}
 
 			}
@@ -376,14 +366,13 @@
 					"fontface" : 0,
 					"fontsize" : 12.0,
 					"id" : "obj-20",
-					"linecount" : 20,
+					"linecount" : 23,
 					"maxclass" : "o.display",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 285.0, 195.0, 225.0, 292.0 ],
-					"text" : "/horizontal : 512,\n/vertical : 166,\n/delta/horizontal : 0,\n/delta/vertical : 0,\n/screenDim : [1920, 1080],\n/middle : [960., 540.],\n/button/is : \"up\",\n/x : -448.,\n/y : 374.,\n/distance : 583.592,\n/angle : 140.144,\n/delta/distance : 0.,\n/delta/angle : 0.,\n/shift : \"up\",\n/capslock : \"up\",\n/option : \"up\",\n/control : \"up\",\n/command : \"down\",\n/time : 2017-08-12T21:01:24.635464Z",
-					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
+					"patching_rect" : [ 285.0, 195.0, 225.0, 333.0 ],
+					"text" : "/horizontal : 401,\n/vertical : 226,\n/delta/horizontal : 0,\n/delta/vertical : 0,\n/screenDim : [1440, 900],\n/middle : [720., 450.],\n/button/is : \"up\",\n/x : -319.,\n/y : 224.,\n/distance : 389.791,\n/angle : 144.924,\n/delta/distance : 0.,\n/delta/angle : 0.,\n/shift : \"up\",\n/capslock : \"up\",\n/option : \"up\",\n/control : \"up\",\n/command : \"down\",\n/time : 2018-01-18T00:05:55.960684Z,\n/state : \"stopped\",\n/pixPerSec : 0.,\n/relative/pixPerSec : 0."
 				}
 
 			}
@@ -392,14 +381,13 @@
 					"fontface" : 0,
 					"fontsize" : 12.0,
 					"id" : "obj-17",
-					"linecount" : 20,
+					"linecount" : 25,
 					"maxclass" : "o.display",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 45.0, 195.0, 210.0, 292.0 ],
-					"text" : "/horizontal : 512,\n/vertical : 166,\n/delta/horizontal : 1,\n/delta/vertical : 4,\n/screenDim : [1920, 1080],\n/middle : [960., 540.],\n/button/is : \"down\",\n/x : -448.,\n/y : 374.,\n/distance : 583.592,\n/angle : 140.144,\n/delta/distance : 4.12311,\n/delta/angle : -75.9638,\n/shift : \"up\",\n/capslock : \"up\",\n/option : \"up\",\n/control : \"up\",\n/command : \"up\",\n/time : 2017-08-12T21:01:23.470484Z",
-					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
+					"patching_rect" : [ 45.0, 195.0, 210.0, 360.0 ],
+					"text" : "/horizontal : 403,\n/vertical : 226,\n/delta/horizontal : 0,\n/delta/vertical : -1,\n/screenDim : [1440, 900],\n/middle : [720., 450.],\n/button/is : \"down\",\n/x : -317.,\n/y : 224.,\n/distance : 388.156,\n/angle : 144.754,\n/delta/distance : 1.,\n/delta/angle : 90.,\n/shift : \"up\",\n/capslock : \"up\",\n/option : \"up\",\n/control : \"up\",\n/command : \"up\",\n/time : 2018-01-18T00:05:55.840727Z,\n/state : \"started\",\n/pixPerSec : 24.9792,\n/relative/pixPerSec : 0.0173467"
 				}
 
 			}
@@ -422,10 +410,10 @@
 					"maxclass" : "newobj",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 45.0, 15.0, 103.0, 22.0 ],
+					"outlettype" : [ "FullPacket" ],
+					"patching_rect" : [ 45.0, 15.0, 105.0, 22.0 ],
 					"style" : "",
-					"text" : "m158.o.io.mouse"
+					"text" : "cnmat.o.io.mouse"
 				}
 
 			}
@@ -574,14 +562,14 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "m158.o.io.mouse.maxpat",
+				"name" : "cnmat.o.io.mouse.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/Music-and-Computing/patchers/io",
 				"patcherrelativepath" : "../../../../Music-and-Computing/patchers/io",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "m158.loadbang.maxpat",
+				"name" : "cnmat.loadbang.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/Music-and-Computing/patchers/internal",
 				"patcherrelativepath" : "../../../../Music-and-Computing/patchers/internal",
 				"type" : "JSON",
@@ -604,6 +592,10 @@
 				"type" : "iLaX"
 			}
 , 			{
+				"name" : "o.cond.mxo",
+				"type" : "iLaX"
+			}
+, 			{
 				"name" : "o.timetag.mxo",
 				"type" : "iLaX"
 			}
@@ -612,7 +604,7 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "o.cond.mxo",
+				"name" : "o.route.mxo",
 				"type" : "iLaX"
 			}
 , 			{
