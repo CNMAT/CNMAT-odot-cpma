@@ -2,14 +2,15 @@
 	"patcher" : 	{
 		"fileversion" : 1,
 		"appversion" : 		{
-			"major" : 7,
-			"minor" : 3,
-			"revision" : 4,
-			"architecture" : "x86",
+			"major" : 8,
+			"minor" : 0,
+			"revision" : 1,
+			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 54.0, 86.0, 978.0, 633.0 ],
+		"classnamespace" : "box",
+		"rect" : [ 54.0, 86.0, 1445.0, 825.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,16 +39,27 @@
 		"subpatcher_template" : "gridded",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-3",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 360.0, 120.0, 72.0, 20.0 ],
+					"text" : "# planes"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"fontface" : 0,
 					"fontsize" : 11.0,
 					"id" : "obj-2",
+					"linecount" : 5,
 					"maxclass" : "o.expr.codebox",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
-					"patching_rect" : [ 480.0, 660.0, 838.0, 31.0 ],
-					"text" : "map(lambda(i, assign(\"/section/\" + i, /plane/0[[aseq(i * /dim[[0]], (i * /dim[[0]] + /dim[[0]]) - 1)]])), aseq(0, /dim[[1]]))",
-					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+					"patching_rect" : [ 377.0, 570.0, 624.0, 81.0 ],
+					"text" : "map(\n  lambda([i], \n    assign(\"/row/\" + i, /plane/0[[aseq(i * /dim[[0]], (i * /dim[[0]] + /dim[[0]]) - 1)]])\n  ), aseq(0, /dim[[1]] - 1)\n)"
 				}
 
 			}
@@ -57,8 +69,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 780.0, 585.0, 257.0, 20.0 ],
-					"style" : "",
+					"patching_rect" : [ 623.0, 540.0, 257.0, 20.0 ],
 					"text" : "* issue where not enough sections are created"
 				}
 
@@ -70,8 +81,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "bang" ],
-					"patching_rect" : [ 302.5, 165.0, 29.5, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 145.5, 120.0, 29.5, 22.0 ],
 					"text" : "b"
 				}
 
@@ -85,8 +95,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 360.0, 345.0, 169.0, 23.0 ],
-					"style" : "",
+					"patching_rect" : [ 203.0, 300.0, 169.0, 23.0 ],
 					"text" : "jit.matrix @adapt 1 @thru 0"
 				}
 
@@ -98,8 +107,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1095.0, 150.0, 50.0, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 773.0, 300.0, 50.0, 22.0 ],
 					"text" : "plane 1"
 				}
 
@@ -111,8 +119,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1020.0, 150.0, 50.0, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 698.0, 300.0, 50.0, 22.0 ],
 					"text" : "plane 0"
 				}
 
@@ -128,7 +135,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 4,
 					"outlettype" : [ "list", "", "", "" ],
-					"patching_rect" : [ 960.0, 195.0, 360.0, 165.0 ],
+					"patching_rect" : [ 708.0, 348.5, 360.0, 165.0 ],
 					"rows" : 5
 				}
 
@@ -138,14 +145,13 @@
 					"fontface" : 0,
 					"fontsize" : 12.0,
 					"id" : "obj-74",
-					"linecount" : 13,
+					"linecount" : 11,
 					"maxclass" : "o.display",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 534.0, 735.0, 740.0, 197.0 ],
-					"text" : "/planecount : 2,\n/plane/0 : [0.460138, 0.365729, 0.270758, 0.828742, 0.763941, 0.0662386, 0.748078, 0.531398, 0.524831, 0.839734, 0.0179807, 0.583818, 0.321048, 0.260388, 0.71659, 0.676915, 0.846145, 0.285433, 0.497419, 0.910832],\n/plane/1 : [0.613302, 0.887819, 0.587639, 0.888192, 0.445494, 0.741943, 0.182391, 0.425483, 0.876561, 0.0336487, 0.182765, 0.2563, 0.729203, 0.436594, 0.311443, 0.492805, 0.627675, 0.527255, 0.822512, 0.985324],\n/dim : [4, 5],\n/section/0 : [0.460138, 0.365729, 0.270758, 0.828742],\n/section/1 : [0.763941, 0.0662386, 0.748078, 0.531398],\n/section/2 : [0.524831, 0.839734, 0.0179807, 0.583818],\n/section/3 : [0.321048, 0.260388, 0.71659, 0.676915],\n/section/4 : [0.846145, 0.285433, 0.497419, 0.910832]",
-					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
+					"patching_rect" : [ 377.0, 690.0, 823.0, 170.0 ],
+					"text" : "/planecount : 2,\n/plane/0 : [0.657079, 0.810464, 0.140556, 0.121124, 0.429697, 0.708355, 0.633369, 0.782881, 0.750896, 0.118417, 0.971498, 0.780613, 0.449548, 0.848853, 0.651565, 0.651399, 0.550307, 0.524773, 0.198474, 0.447343],\n/plane/1 : [0.464609, 0.298829, 0.210505, 0.444585, 0.53318, 0.993016, 0.143574, 0.899114, 0.199244, 0.964695, 0.59613, 0.233151, 0.364732, 0.488688, 0.223134, 0.409823, 0.883405, 0.250555, 0.281013, 0.666569],\n/dim : [4, 5],\n/row/0 : [0.657079, 0.810464, 0.140556, 0.121124],\n/row/1 : [0.429697, 0.708355, 0.633369, 0.782881],\n/row/2 : [0.750896, 0.118417, 0.971498, 0.780613],\n/row/3 : [0.449548, 0.848853, 0.651565, 0.651399],\n/row/4 : [0.550307, 0.524773, 0.198474, 0.447343]"
 				}
 
 			}
@@ -156,8 +162,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "bang" ],
-					"patching_rect" : [ 596.0, 120.0, 34.0, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 439.0, 75.0, 34.0, 22.0 ],
 					"text" : "t 2 b"
 				}
 
@@ -169,8 +174,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 596.0, 90.0, 60.0, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 439.0, 45.0, 60.0, 22.0 ],
 					"text" : "loadbang"
 				}
 
@@ -181,8 +185,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 735.0, 165.0, 150.0, 20.0 ],
-					"style" : "",
+					"patching_rect" : [ 578.0, 120.0, 150.0, 20.0 ],
 					"text" : "change dim"
 				}
 
@@ -193,8 +196,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 195.0, 300.0, 137.0, 20.0 ],
-					"style" : "",
+					"patching_rect" : [ 38.0, 255.0, 137.0, 20.0 ],
 					"text" : "this could be any matrix"
 				}
 
@@ -204,14 +206,13 @@
 					"fontface" : 0,
 					"fontsize" : 11.0,
 					"id" : "obj-66",
-					"linecount" : 2,
+					"linecount" : 3,
 					"maxclass" : "o.expr.codebox",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
-					"patching_rect" : [ 360.0, 474.0, 237.0, 43.0 ],
-					"text" : "assign(\"/plane/\" + /id, /plane), \ndelete(/id), delete(/plane)",
-					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+					"patching_rect" : [ 203.0, 429.0, 228.0, 56.0 ],
+					"text" : "assign(\"/plane/\" + /id, /plane), \ndelete(/id), \ndelete(/plane)"
 				}
 
 			}
@@ -222,8 +223,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "FullPacket" ],
-					"patching_rect" : [ 735.0, 495.0, 72.0, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 578.0, 450.0, 72.0, 22.0 ],
 					"text" : "o.pack /dim"
 				}
 
@@ -235,8 +235,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "FullPacket" ],
-					"patching_rect" : [ 534.0, 579.0, 50.0, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 377.0, 534.0, 50.0, 22.0 ],
 					"text" : "o.union"
 				}
 
@@ -248,8 +247,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 735.0, 465.0, 61.0, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 578.0, 420.0, 61.0, 22.0 ],
 					"text" : "route dim"
 				}
 
@@ -261,8 +259,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 735.0, 210.0, 54.0, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 578.0, 165.0, 54.0, 22.0 ],
 					"text" : "dim 4 5"
 				}
 
@@ -274,8 +271,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 534.0, 534.0, 55.0, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 377.0, 495.0, 55.0, 22.0 ],
 					"text" : "o.collect"
 				}
 
@@ -286,8 +282,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 285.0, 75.0, 118.0, 20.0 ],
-					"style" : "",
+					"patching_rect" : [ 128.0, 30.0, 118.0, 20.0 ],
 					"text" : "send matrix to odot"
 				}
 
@@ -299,8 +294,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 259.0, 75.0, 24.0, 24.0 ],
-					"style" : ""
+					"parameter_enable" : 0,
+					"patching_rect" : [ 102.0, 30.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -311,8 +306,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "FullPacket" ],
-					"patching_rect" : [ 360.0, 444.0, 163.0, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 203.0, 399.0, 163.0, 22.0 ],
 					"text" : "o.pack /plane /id /planecount"
 				}
 
@@ -324,8 +318,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 596.0, 300.0, 57.0, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 439.0, 255.0, 57.0, 22.0 ],
 					"text" : "plane $1"
 				}
 
@@ -337,8 +330,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 3,
 					"outlettype" : [ "bang", "bang", "int" ],
-					"patching_rect" : [ 472.0, 210.0, 143.0, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 315.0, 165.0, 143.0, 22.0 ],
 					"text" : "uzi 2 0"
 				}
 
@@ -351,8 +343,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 596.0, 165.0, 50.0, 22.0 ],
-					"style" : ""
+					"patching_rect" : [ 439.0, 120.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -363,8 +354,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 375.0, 240.0, 86.0, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 218.0, 195.0, 86.0, 22.0 ],
 					"text" : "planecount $1"
 				}
 
@@ -376,8 +366,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 360.0, 399.0, 154.0, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 203.0, 354.0, 154.0, 22.0 ],
 					"text" : "jit.spill @plane 0"
 				}
 
@@ -391,8 +380,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 360.0, 300.0, 130.0, 23.0 ],
-					"style" : "",
+					"patching_rect" : [ 203.0, 255.0, 130.0, 23.0 ],
 					"text" : "jit.noise 2 float32 3 3"
 				}
 
@@ -662,9 +650,7 @@
 		"bgfillcolor_type" : "gradient",
 		"bgfillcolor_color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
 		"bgfillcolor_color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-		"bgfillcolor_color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-		"bgfillcolor_angle" : 270.0,
-		"bgfillcolor_proportion" : 0.39
+		"bgfillcolor_color" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
 	}
 
 }
