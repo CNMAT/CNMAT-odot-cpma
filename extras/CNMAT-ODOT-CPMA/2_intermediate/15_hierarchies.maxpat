@@ -2,14 +2,15 @@
 	"patcher" : 	{
 		"fileversion" : 1,
 		"appversion" : 		{
-			"major" : 7,
-			"minor" : 3,
+			"major" : 8,
+			"minor" : 0,
 			"revision" : 4,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 54.0, 86.0, 1142.0, 565.0 ],
+		"classnamespace" : "box",
+		"rect" : [ 95.0, 85.0, 1142.0, 565.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,13 +40,33 @@
 		"boxes" : [ 			{
 				"box" : 				{
 					"fontface" : 0,
+					"fontsize" : 11.0,
+					"id" : "obj-9",
+					"linecount" : 8,
+					"maxclass" : "o.compose",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 278.0, 195.0, 166.0, 110.0 ],
+					"presentation_linecount" : 8,
+					"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -92, 47, 119, 104, 101, 101, 108, 115, 0, 44, 46, 0, 0, 0, 0, 0, -108, 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -128, 47, 114, 101, 97, 114, 0, 0, 0, 44, 46, 0, 0, 0, 0, 0, 112, 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 20, 47, 98, 114, 97, 110, 100, 0, 0, 44, 115, 0, 0, 112, 114, 111, 102, 105, 108, 101, 0, 0, 0, 0, 20, 47, 115, 112, 111, 107, 101, 99, 111, 117, 110, 116, 0, 44, 105, 0, 0, 0, 0, 0, 28, 0, 0, 0, 20, 47, 108, 97, 99, 105, 110, 103, 0, 44, 115, 0, 0, 50, 45, 99, 114, 111, 115, 115, 0, 0, 0, 0, 20, 47, 116, 105, 114, 101, 119, 105, 100, 116, 104, 0, 0, 44, 105, 0, 0, 0, 0, 0, 25 ],
+					"saved_bundle_length" : 184,
+					"text" : "/wheels : {\n\t/rear : {\n\t\t/brand : \"profile\",\n\t\t/spokecount : 28,\n\t\t/lacing : \"2-cross\",\n\t\t/tirewidth : 25\n\t}\n}"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 0,
 					"fontsize" : 12.0,
 					"id" : "obj-19",
+					"linecount" : 8,
 					"maxclass" : "o.display",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 510.0, 495.0, 150.0, 34.0 ]
+					"patching_rect" : [ 510.0, 388.0, 169.0, 129.0 ],
+					"text" : "/deals : {\n\t/rear : {\n\t\t/brand : \"profile\",\n\t\t/spokecount : 28,\n\t\t/lacing : \"2-cross\",\n\t\t/tirewidth : 25\n\t}\n}"
 				}
 
 			}
@@ -54,11 +75,13 @@
 					"fontface" : 0,
 					"fontsize" : 12.0,
 					"id" : "obj-17",
+					"linecount" : 6,
 					"maxclass" : "o.display",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 320.5, 375.0, 150.0, 34.0 ]
+					"patching_rect" : [ 305.5, 373.0, 162.0, 102.0 ],
+					"text" : "/rear : {\n\t/brand : \"profile\",\n\t/spokecount : 28,\n\t/lacing : \"2-cross\",\n\t/tirewidth : 25\n}"
 				}
 
 			}
@@ -69,8 +92,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "FullPacket" ],
-					"patching_rect" : [ 510.0, 465.0, 81.0, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 525.0, 360.0, 81.0, 22.0 ],
 					"text" : "o.pack /deals"
 				}
 
@@ -83,7 +105,6 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "FullPacket" ],
 					"patching_rect" : [ 320.5, 330.0, 92.0, 22.0 ],
-					"style" : "",
 					"text" : "o.route /wheels"
 				}
 
@@ -97,7 +118,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 405.0, 225.0, 150.0, 24.0 ],
+					"patching_rect" : [ 495.0, 200.0, 225.5, 24.0 ],
 					"saved_bundle_data" : [  ],
 					"saved_bundle_length" : 0
 				}
@@ -113,10 +134,10 @@
 					"patching_rect" : [ 735.0, 436.0, 50.5, 22.0 ],
 					"saved_object_attributes" : 					{
 						"embed" : 0,
-						"parameter_enable" : 0
+						"parameter_enable" : 0,
+						"parameter_mappable" : 0
 					}
 ,
-					"style" : "",
 					"text" : "dict car"
 				}
 
@@ -128,8 +149,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 735.0, 406.0, 39.0, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 735.0, 381.0, 39.0, 22.0 ],
 					"text" : "o.dict"
 				}
 
@@ -156,11 +176,13 @@
 					"fontface" : 0,
 					"fontsize" : 11.0,
 					"id" : "obj-3",
+					"linecount" : 3,
 					"maxclass" : "o.display",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 60.0, 388.0, 112.0, 33.0 ]
+					"patching_rect" : [ 60.0, 388.0, 112.0, 58.0 ],
+					"text" : "/container : {\n\t/val : 22\n}"
 				}
 
 			}
@@ -202,8 +224,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 420.0, 59.0, 24.0, 24.0 ],
-					"style" : ""
+					"parameter_enable" : 0,
+					"patching_rect" : [ 420.0, 90.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -214,13 +236,13 @@
 					"numinlets" : 2,
 					"numoutlets" : 4,
 					"outlettype" : [ "dictionary", "", "", "" ],
-					"patching_rect" : [ 420.0, 119.0, 50.5, 22.0 ],
+					"patching_rect" : [ 420.0, 133.0, 50.5, 22.0 ],
 					"saved_object_attributes" : 					{
 						"embed" : 0,
-						"parameter_enable" : 0
+						"parameter_enable" : 0,
+						"parameter_mappable" : 0
 					}
 ,
-					"style" : "",
 					"text" : "dict car"
 				}
 
@@ -247,11 +269,13 @@
 					"fontface" : 0,
 					"fontsize" : 11.0,
 					"id" : "obj-21",
+					"linecount" : 4,
 					"maxclass" : "o.display",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 60.0, 177.0, 138.0, 33.0 ]
+					"patching_rect" : [ 60.0, 177.0, 138.0, 70.0 ],
+					"text" : "/container : {\n\t/val : \"sheep\",\n\t/list : [1, 2, 3]\n}"
 				}
 
 			}
@@ -264,8 +288,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
-					"patching_rect" : [ 60.0, 133.0, 283.0, 31.0 ],
-					"text" : "assigntobundlemember(/container, /val, 2)"
+					"patching_rect" : [ 60.0, 133.0, 321.0, 31.0 ],
+					"text" : "assigntobundlemember(/container, /val, \"sheep\")"
 				}
 
 			}
@@ -349,6 +373,13 @@
 				}
 
 			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-14", 0 ],
+					"source" : [ "obj-9", 0 ]
+				}
+
+			}
  ],
 		"dependency_cache" : [ 			{
 				"name" : "o.expr.codebox.mxo",
@@ -375,13 +406,7 @@
 				"type" : "iLaX"
 			}
  ],
-		"autosave" : 0,
-		"bgfillcolor_type" : "gradient",
-		"bgfillcolor_color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
-		"bgfillcolor_color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-		"bgfillcolor_color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-		"bgfillcolor_angle" : 270.0,
-		"bgfillcolor_proportion" : 0.39
+		"autosave" : 0
 	}
 
 }
