@@ -2,13 +2,14 @@
 	"patcher" : 	{
 		"fileversion" : 1,
 		"appversion" : 		{
-			"major" : 7,
-			"minor" : 3,
-			"revision" : 4,
-			"architecture" : "x86",
+			"major" : 8,
+			"minor" : 0,
+			"revision" : 6,
+			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
+		"classnamespace" : "box",
 		"rect" : [ 72.0, 99.0, 635.0, 697.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
@@ -43,7 +44,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 399.0, 90.0, 121.0, 20.0 ],
-					"style" : "",
 					"text" : "< choose new sound"
 				}
 
@@ -58,13 +58,14 @@
 					"patcher" : 					{
 						"fileversion" : 1,
 						"appversion" : 						{
-							"major" : 7,
-							"minor" : 3,
-							"revision" : 4,
-							"architecture" : "x86",
+							"major" : 8,
+							"minor" : 0,
+							"revision" : 6,
+							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
+						"classnamespace" : "box",
 						"rect" : [ 0.0, 0.0, 640.0, 480.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
@@ -100,7 +101,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 50.0, 130.0, 50.0, 22.0 ],
-									"style" : "",
 									"text" : "max $1"
 								}
 
@@ -113,7 +113,6 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 50.0, 100.0, 71.0, 22.0 ],
-									"style" : "",
 									"text" : "route count"
 								}
 
@@ -127,8 +126,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 50.0, 40.0, 30.0, 30.0 ],
-									"style" : ""
+									"patching_rect" : [ 50.0, 40.0, 30.0, 30.0 ]
 								}
 
 							}
@@ -140,8 +138,7 @@
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 50.0, 212.0, 30.0, 30.0 ],
-									"style" : ""
+									"patching_rect" : [ 50.0, 212.0, 30.0, 30.0 ]
 								}
 
 							}
@@ -175,11 +172,9 @@
 						"description" : "",
 						"digest" : "",
 						"globalpatchername" : "",
-						"style" : "",
 						"tags" : ""
 					}
 ,
-					"style" : "",
 					"text" : "p set_maxcount"
 				}
 
@@ -194,13 +189,14 @@
 					"patcher" : 					{
 						"fileversion" : 1,
 						"appversion" : 						{
-							"major" : 7,
-							"minor" : 3,
-							"revision" : 4,
-							"architecture" : "x86",
+							"major" : 8,
+							"minor" : 0,
+							"revision" : 6,
+							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
+						"classnamespace" : "box",
 						"rect" : [ 0.0, 0.0, 640.0, 480.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
@@ -236,7 +232,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
 									"patching_rect" : [ 50.0, 100.0, 60.0, 22.0 ],
-									"style" : "",
 									"text" : "loadbang"
 								}
 
@@ -250,7 +245,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 50.0, 130.0, 227.0, 49.0 ],
-									"style" : "",
 									"text" : "readfolder \"~/Documents/Max 7/Packages/CNMAT-ODOT-SS/media/\", getcount"
 								}
 
@@ -268,7 +262,6 @@
 										"embed" : 0
 									}
 ,
-									"style" : "",
 									"text" : "polybuffer~ lg"
 								}
 
@@ -281,8 +274,7 @@
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 50.0, 272.0, 30.0, 30.0 ],
-									"style" : ""
+									"patching_rect" : [ 50.0, 272.0, 30.0, 30.0 ]
 								}
 
 							}
@@ -316,11 +308,9 @@
 						"description" : "",
 						"digest" : "",
 						"globalpatchername" : "",
-						"style" : "",
 						"tags" : ""
 					}
 ,
-					"style" : "",
 					"text" : "p load_files"
 				}
 
@@ -332,7 +322,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 75.0, 45.0, 98.0, 20.0 ],
-					"style" : "",
 					"text" : "< turn on mouse"
 				}
 
@@ -345,8 +334,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 47.0, 45.0, 24.0, 24.0 ],
-					"style" : ""
+					"patching_rect" : [ 47.0, 45.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -358,7 +346,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 120.0, 120.0, 34.0, 22.0 ],
-					"style" : "",
 					"text" : "gate"
 				}
 
@@ -367,14 +354,13 @@
 				"box" : 				{
 					"id" : "obj-10",
 					"maxclass" : "number",
-					"maximum" : 12,
+					"maximum" : 0,
 					"minimum" : 1,
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 347.0, 90.0, 50.0, 22.0 ],
-					"style" : ""
+					"patching_rect" : [ 347.0, 90.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -386,7 +372,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "FullPacket" ],
 					"patching_rect" : [ 347.0, 120.0, 96.0, 22.0 ],
-					"style" : "",
 					"text" : "o.pack /buf/num"
 				}
 
@@ -399,7 +384,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "FullPacket" ],
 					"patching_rect" : [ 120.0, 165.0, 50.0, 22.0 ],
-					"style" : "",
 					"text" : "o.union"
 				}
 
@@ -412,7 +396,6 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "signal" ],
 					"patching_rect" : [ 120.0, 360.0, 143.0, 22.0 ],
-					"style" : "",
 					"text" : "o.grainplay.stream.single"
 				}
 
@@ -423,8 +406,7 @@
 					"maxclass" : "scope~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 315.0, 450.0, 128.0, 48.0 ],
-					"style" : ""
+					"patching_rect" : [ 315.0, 450.0, 128.0, 48.0 ]
 				}
 
 			}
@@ -439,8 +421,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
 					"patching_rect" : [ 120.0, 195.0, 448.0, 143.0 ],
-					"text" : "/buf/num ??= 1,\n/x/norm = float32(/horizontal) / /screenDim[[0]],\n/y/norm = float32(/vertical) / /screenDim[[1]],\n/metro/period = scale(/y/norm, 0., 1., 5, 500), \n/dur/ms = scale(/y/norm, 0., 1., 50, 100),\n/start/phase = /x/norm, \n/gain = 1. - /y/norm, \n/buffer = \"lg.\" + /buf/num, \n/cutoff = clip(scale(/y/norm, 0.35, 0.77, 60, 12000), 60, 12000),\nif(/button/is == \"up\", /metro/on = 0, /metro/on = 1)",
-					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+					"text" : "/buf/num ??= 1,\n/x/norm = float32(/horizontal) / /screenDim[[0]],\n/y/norm = float32(/vertical) / /screenDim[[1]],\n/metro/period = scale(/y/norm, 0., 1., 5, 500), \n/dur/ms = scale(/y/norm, 0., 1., 50, 100),\n/start/phase = /x/norm, \n/gain = 1. - /y/norm, \n/buffer = \"lg.\" + /buf/num, \n/cutoff = clip(scale(/y/norm, 0.35, 0.77, 60, 12000), 60, 12000),\nif(/button/is == \"up\", /metro/on = 0, /metro/on = 1)"
 				}
 
 			}
@@ -450,10 +431,9 @@
 					"maxclass" : "newobj",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "FullPacket" ],
 					"patching_rect" : [ 195.0, 44.0, 103.0, 22.0 ],
-					"style" : "",
-					"text" : "m158.o.io.mouse"
+					"text" : "cnmat.o.io.mouse"
 				}
 
 			}
@@ -465,7 +445,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 261.5, 570.0, 37.0, 22.0 ],
-					"style" : "",
 					"text" : "open"
 				}
 
@@ -476,14 +455,14 @@
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 120.0, 600.0, 45.0, 45.0 ],
-					"style" : ""
+					"patching_rect" : [ 120.0, 600.0, 45.0, 45.0 ]
 				}
 
 			}
 , 			{
 				"box" : 				{
 					"id" : "obj-46",
+					"lastchannelcount" : 0,
 					"maxclass" : "live.gain~",
 					"numinlets" : 2,
 					"numoutlets" : 5,
@@ -492,13 +471,13 @@
 					"patching_rect" : [ 120.0, 435.0, 123.0, 105.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "live.gain~",
-							"parameter_shortname" : "live.gain~",
 							"parameter_type" : 0,
+							"parameter_unitstyle" : 4,
 							"parameter_mmin" : -70.0,
+							"parameter_longname" : "live.gain~",
 							"parameter_mmax" : 6.0,
 							"parameter_initial" : [ 0.0 ],
-							"parameter_unitstyle" : 4
+							"parameter_shortname" : "live.gain~"
 						}
 
 					}
@@ -617,40 +596,44 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-46" : [ "live.gain~", "live.gain~", 0 ]
+			"obj-46" : [ "live.gain~", "live.gain~", 0 ],
+			"parameterbanks" : 			{
+
+			}
+
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "m158.o.io.mouse.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/Music-and-Computing/patchers/io",
+				"name" : "cnmat.o.io.mouse.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/Music-and-Computing/patchers/io",
 				"patcherrelativepath" : "../../../../Music-and-Computing/patchers/io",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "m158.loadbang.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/Music-and-Computing/patchers/internal",
+				"name" : "cnmat.loadbang.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/Music-and-Computing/patchers/internal",
 				"patcherrelativepath" : "../../../../Music-and-Computing/patchers/internal",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.grainplay.stream.single.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-ODOT-SS/patchers",
+				"bootpath" : "~/Documents/Max 8/Packages/CNMAT-odot-cpma/patchers",
 				"patcherrelativepath" : "../../../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.genrand.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-ODOT-SS/patchers",
+				"bootpath" : "~/Documents/Max 8/Packages/CNMAT-odot-cpma/patchers",
 				"patcherrelativepath" : "../../../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.grainplay.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-ODOT-SS/patchers",
+				"bootpath" : "~/Documents/Max 8/Packages/CNMAT-odot-cpma/patchers",
 				"patcherrelativepath" : "../../../patchers",
 				"type" : "JSON",
 				"implicit" : 1
@@ -672,15 +655,15 @@
 				"type" : "iLaX"
 			}
 , 			{
+				"name" : "o.cond.mxo",
+				"type" : "iLaX"
+			}
+, 			{
 				"name" : "o.timetag.mxo",
 				"type" : "iLaX"
 			}
 , 			{
 				"name" : "o.change.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.cond.mxo",
 				"type" : "iLaX"
 			}
 , 			{
@@ -692,13 +675,7 @@
 				"type" : "iLaX"
 			}
  ],
-		"autosave" : 0,
-		"bgfillcolor_type" : "gradient",
-		"bgfillcolor_color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
-		"bgfillcolor_color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-		"bgfillcolor_color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-		"bgfillcolor_angle" : 270.0,
-		"bgfillcolor_proportion" : 0.39
+		"autosave" : 0
 	}
 
 }
